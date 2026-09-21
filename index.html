@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso de Ar-Condicionado Automotivo e Agrícola em Tupanciretã (RS) | Rangel Climatizadores</title>
+<meta name="description" content="Curso presencial de ar-condicionado automotivo e agrícola em Tupanciretã (RS). Conteúdo técnico e prático, turmas de 16 vagas, certificado e suporte depois do curso. Distribuidor DENSO.">
+<meta property="og:title" content="Curso presencial de ar-condicionado automotivo e agrícola | Rangel Climatizadores">
+<meta property="og:description" content="Turmas de 16 vagas em Tupanciretã (RS). Conteúdo técnico e prático, linha leve e agrícola, certificado e suporte depois do curso.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo.png">
+<meta name="theme-color" content="#061a3a">
+<link rel="icon" href="assets/logo.png" type="image/png">
+
+<!--
+=====================================================================
+  RANGEL CLIMATIZADORES — PÁGINA DO CURSO (versão 2, 21/09/2026)
+
+  ARQUIVOS: publique a pasta inteira (index.html + assets/).
+  COMO EDITAR: fotos, vídeos, depoimentos, data da turma, WhatsApp e
+  pixel ficam no bloco CONFIG, no fim deste arquivo.
+  Sem preço na página (decisão do Rangel). Valor e pagamento: WhatsApp.
+=====================================================================
+-->
+
+<style>
+@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Regular.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:500;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Medium.woff") format("woff")}
+@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Bold.woff") format("woff")}
+
+:root{
+  /* paleta tirada do logo: vermelho RANGEL + azul das ondas */
+  --red:#d80008;
+  --red-dark:#b00006;
+  --blue:#004890;
+  --blue-2:#0a5cb8;
+  --navy:#061a3a;
+  --navy-2:#0a2a5c;
+  --ink:#0b1630;
+  --ink-soft:#4a5875;
+  --bg:#f4f6fa;
+  --card:#ffffff;
+  --line:#e0e6f0;
+  --tint:#e8f0fa;
+  --radius:18px;
+  --gut:20px;
+  --shadow:0 1px 2px rgba(6,26,58,.05),0 12px 32px -12px rgba(6,26,58,.16);
+  --font:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
+  font-size:16px;line-height:1.65;padding-bottom:78px;-webkit-text-size-adjust:100%;
+}
+img,svg{max-width:100%}
+a{color:var(--blue-2)}
+[id]{scroll-margin-top:84px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3{margin:0 0 .5em;color:var(--navy);font-weight:700;letter-spacing:-.02em;line-height:1.15}
+h1{font-size:clamp(1.95rem,7.2vw,3.3rem)}
+h2{font-size:clamp(1.65rem,5.4vw,2.6rem)}
+h3{font-size:1.1rem;letter-spacing:-.01em;line-height:1.3}
+p{margin:0 0 1em}
+section{padding:64px 0}
+.lead{font-size:1.06rem;color:var(--ink-soft);max-width:58ch}
+.small{font-size:.88rem;color:var(--ink-soft)}
+.hide{display:none!important}
+
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-2);margin-bottom:16px}
+.eyebrow i{font-style:normal;color:var(--red)}
+.eyebrow::after{content:"";height:1px;width:44px;background:currentColor;opacity:.35}
+.on-dark .eyebrow{color:#8fc0f5}
+.on-dark .eyebrow i{color:#ff6b70}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:60;background:rgba(6,26,58,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0}
+.brand img{width:52px;height:52px;border-radius:50%;background:#fff;flex:none;display:block}
+.brand b{display:block;font-size:.98rem;line-height:1.1;letter-spacing:-.01em}
+.brand small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#93b3d9;margin-top:3px}
+.nav{display:none}
+.nav a{color:#c9daf0;text-decoration:none;font-size:.88rem;font-weight:500;padding:8px 2px;position:relative}
+.nav a:hover{color:#fff}
+.top .btn{display:none}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--red);color:#fff;text-decoration:none;font-family:var(--font);font-weight:700;font-size:1rem;
+  padding:16px 26px;border-radius:14px;border:0;cursor:pointer;min-height:54px;letter-spacing:-.005em;
+  box-shadow:0 10px 24px -8px rgba(216,0,8,.55);transition:background .18s,transform .18s,box-shadow .18s;
+}
+.btn:hover{background:var(--red-dark);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible,summary:focus-visible,.cb:focus-visible,.dot:focus-visible{outline:3px solid #ffb703;outline-offset:3px}
+.btn svg{flex:none}
+.btn-block{display:flex;width:100%}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);box-shadow:none}
+.btn-ghost:hover{background:rgba(255,255,255,.08);transform:none}
+.btn-line{background:transparent;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
+.btn-line:hover{background:var(--navy);color:#fff}
+.btn-sm{padding:10px 18px;min-height:44px;font-size:.9rem;border-radius:12px;box-shadow:none}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;padding:44px 0 56px;
+  background:
+    radial-gradient(900px 420px at 88% -8%,rgba(10,92,184,.6),transparent 62%),
+    radial-gradient(600px 300px at -5% 110%,rgba(216,0,8,.22),transparent 60%),
+    linear-gradient(180deg,#061a3a 0%,#08224b 100%);
+}
+.hero::before{
+  content:"";position:absolute;inset:0;opacity:1;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='90' viewBox='0 0 260 90'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.05' stroke-width='2'%3E%3Cpath d='M0 20 Q32 2 65 20 T130 20 T195 20 T260 20'/%3E%3Cpath d='M0 45 Q32 27 65 45 T130 45 T195 45 T260 45'/%3E%3Cpath d='M0 70 Q32 52 65 70 T130 70 T195 70 T260 70'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:260px 90px;
+  -webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);mask-image:linear-gradient(180deg,#000,transparent 85%);
+}
+.hero .wrap{position:relative}
+.hero-grid{display:grid;gap:34px}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#dbe9fb;border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:99px;background:rgba(255,255,255,.05);margin-bottom:22px}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:#ff4b52;box-shadow:0 0 0 4px rgba(255,75,82,.22)}
+.hero h1{color:#fff}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 82%,var(--red) 82%,var(--red) 94%,transparent 94%);padding:0 2px}
+.hero .lead{color:#c5d7ee;font-size:1.08rem}
+.hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.hero-note{font-size:.82rem;color:#8fa9c9;margin:14px 0 0}
+
+.ticket{
+  background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));
+  border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:24px;position:relative;
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.6);
+}
+.ticket .tag{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:14px}
+.ticket h2{color:#fff;font-size:1.5rem;margin-bottom:.25em}
+.ticket .sub{color:#b6cbe6;font-size:.92rem;margin:0}
+.ticket dl{margin:20px 0 0;padding:20px 0 0;border-top:1px dashed rgba(255,255,255,.25);display:grid;grid-template-columns:1fr 1fr;gap:18px 12px}
+.ticket dt{font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;color:#8fb2dc;font-weight:700}
+.ticket dd{margin:3px 0 0;font-weight:700;color:#fff;font-size:1rem;line-height:1.3}
+.ticket .btn{margin-top:22px}
+
+/* ---------- faixa de confiança ---------- */
+.strip{background:#fff;border-bottom:1px solid var(--line)}
+.strip ul{list-style:none;margin:0;padding:18px 0;display:grid;gap:12px 22px;grid-template-columns:1fr 1fr;font-size:.82rem;font-weight:500;color:var(--navy);line-height:1.35}
+.strip li{display:flex;gap:10px;align-items:flex-start}
+.strip li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--red);margin-top:.5em}
+
+/* ---------- cards ---------- */
+.grid{display:grid;gap:16px;margin-top:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px)}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--tint);color:var(--blue);display:grid;place-items:center;margin-bottom:16px}
+.card h3{margin-bottom:.4em}
+.card p{color:var(--ink-soft);font-size:.95rem;margin:0 0 14px}
+.card .go{font-weight:700;text-decoration:none;color:var(--red);font-size:.92rem}
+.card .go:hover{text-decoration:underline}
+
+.honest{margin-top:32px;background:var(--navy);color:#dbe9fb;border-radius:var(--radius);padding:28px 24px;position:relative;overflow:hidden}
+.honest::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
+.honest h3{color:#fff;font-size:1.2rem;margin-bottom:.7em}
+.honest ul{margin:0;padding-left:1.2em}
+.honest li{margin:.5em 0;color:#c5d7ee;font-size:.96rem}
+
+/* ---------- alternância ---------- */
+.white{background:#fff}
+.dark{background:linear-gradient(180deg,#061a3a,#0a2a5c);color:#fff}
+.dark h2{color:#fff}
+.dark .lead{color:#b6cbe6}
+
+/* ---------- o que acompanha ---------- */
+.checks{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:14px}
+.checks li{display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:.96rem;color:var(--ink-soft)}
+.checks li b{display:block;color:var(--navy);font-size:1rem;margin-bottom:2px}
+.checks .ck{flex:none;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin-top:2px}
+
+/* ---------- programa ---------- */
+.steps{counter-reset:s;list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px}
+.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px 18px 74px;position:relative;box-shadow:var(--shadow)}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:20px;top:16px;font-weight:700;font-size:1.5rem;color:var(--red);letter-spacing:-.03em;line-height:1.3}
+.steps b{display:block;color:var(--navy);margin-bottom:2px}
+.steps span{color:var(--ink-soft);font-size:.92rem;display:block}
+
+/* ---------- empresas ---------- */
+.band{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);color:#fff;border-radius:26px;padding:36px 26px}
+.band::after{content:"";position:absolute;right:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;border:38px solid rgba(255,255,255,.05)}
+.band .inner{position:relative;max-width:640px}
+.band h2{color:#fff;font-size:clamp(1.5rem,5vw,2.2rem)}
+.band p{color:#c9dcf3}
+.band .eyebrow{color:#8fc0f5}
+
+/* ---------- carrossel de fotos ---------- */
+.car{position:relative;margin-top:32px}
+.track{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px var(--gut) 20px;margin:0 calc(var(--gut) * -1);scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 82%;scroll-snap-align:center;margin:0;position:relative}
+.slide .pic{position:relative;aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#12356b,#0a2a5c);border:1px solid rgba(255,255,255,.12)}
+.slide[role=button]{cursor:zoom-in}
+.slide[role=button]:focus-visible{outline:3px solid #ffb703;outline-offset:3px}
+.slide img.bgimg{position:absolute;left:-24px;top:-24px;width:calc(100% + 48px);height:calc(100% + 48px);max-width:none;object-fit:cover;filter:blur(22px) brightness(.62) saturate(1.15)}
+.slide img.ph{position:absolute;inset:0;margin:auto;width:30%;aspect-ratio:1;border-radius:50%;opacity:.22}
+.slide img.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.slide figcaption{padding:12px 4px 0;font-size:.86rem;font-weight:500;color:#cfe1f7;line-height:1.4}
+.slide .ph-tag{position:absolute;left:16px;top:16px;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#cfe1f7;border:1px dashed rgba(255,255,255,.35);border-radius:99px;padding:5px 12px}
+/* setas + pontinhos (celular e computador) */
+.ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:4px;color:var(--navy)}
+.on-dark .ctrl{color:#fff}
+.cb{width:48px;height:48px;border-radius:50%;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer;display:grid;place-items:center;transition:background .15s,opacity .15s}
+.cb:hover:not(:disabled){background:rgba(127,160,200,.18)}
+.cb:disabled{opacity:.28;cursor:default}
+.dots{display:flex;align-items:center;gap:8px}
+.dot{position:relative;width:8px;height:8px;border-radius:99px;border:0;padding:0;background:currentColor;opacity:.3;cursor:pointer;transition:width .2s,opacity .2s,background .2s}
+.dot::after{content:"";position:absolute;inset:-12px -4px}
+.dot.on{width:24px;opacity:1;background:var(--red)}
+.on-dark .dot{opacity:.5}
+.on-dark .dot.on{opacity:1}
+
+/* ---------- foto ampliada ---------- */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(4,15,36,.95);display:flex;align-items:center;justify-content:center;padding:64px 16px 24px}
+.lb figure{margin:0;text-align:center;max-width:100%}
+.lb img{display:block;margin:0 auto;max-width:100%;max-height:calc(100vh - 150px);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb figcaption{color:#cfe1f7;font-size:.9rem;margin-top:14px;padding:0 8px}
+.lb-x,.lb-nav{position:absolute;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center;font-family:var(--font)}
+.lb-x{top:12px;right:12px;font-size:1.6rem;line-height:1}
+.lb-x:hover,.lb-nav:hover{background:rgba(255,255,255,.18)}
+.lb-x:focus-visible,.lb-nav:focus-visible{outline:3px solid #ffb703;outline-offset:2px}
+.lb-nav{bottom:14px}
+.lb-p{left:calc(50% - 60px)}
+.lb-n{left:calc(50% + 12px)}
+@media(min-width:820px){.lb{padding:56px 96px}.lb img{max-height:calc(100vh - 130px)}.lb-nav{bottom:auto;top:50%;transform:translateY(-50%)}.lb-p{left:24px}.lb-n{left:auto;right:24px}}
+
+/* ---------- depoimentos ---------- */
+.vids{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--gut) 18px;margin:32px calc(var(--gut) * -1) 0;scrollbar-width:none}
+.vids::-webkit-scrollbar{display:none}
+.vcard{flex:0 0 78%;max-width:320px;scroll-snap-align:center}
+.vbox{position:relative;width:100%;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.vbox .vig{position:absolute;left:0;top:0;width:100%;border:0;display:block;background:#fff}
+.vbox.vfile{background:#000}
+.vbox video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
+.vcap{padding:14px 4px 0}
+.vcap b{display:block;color:var(--navy);font-size:1rem;line-height:1.25}
+.vcap span{display:block;color:var(--ink-soft);font-size:.82rem;margin-top:2px}
+.vcap a{display:inline-block;margin-top:6px;font-size:.8rem;font-weight:700;color:var(--red);text-decoration:none}
+.vcap a:hover{text-decoration:underline}
+.quotes{display:grid;gap:16px;margin-top:20px}
+blockquote{margin:0;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:var(--radius);padding:24px 24px 20px;box-shadow:var(--shadow);max-width:820px}
+blockquote p{margin:0 0 .9em;color:var(--ink);font-size:1rem}
+blockquote footer{font-size:.82rem;color:var(--ink-soft);font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.chips li{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-weight:500;font-size:.88rem;color:var(--navy)}
+.chips li.soft{background:var(--tint);border-color:#c5daf2}
+
+/* ---------- vaga + local ---------- */
+.flow{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:14px;counter-reset:f}
+.flow li{counter-increment:f;display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.flow li::before{content:counter(f);flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center}
+.flow b{display:block;color:var(--navy)}
+.flow span{font-size:.92rem;color:var(--ink-soft)}
+.local{margin-top:36px;display:grid;gap:16px}
+.local .card{padding:26px}
+.local h3{display:flex;align-items:center;gap:10px}
+.local address{font-style:normal;color:var(--ink-soft);margin:6px 0 16px}
+.local .hrs{margin:0;font-size:.9rem;color:var(--ink-soft)}
+
+/* ---------- faq ---------- */
+details{background:#fff;border:1px solid var(--line);border-radius:16px;margin:12px 0;box-shadow:var(--shadow)}
+summary{cursor:pointer;font-weight:700;color:var(--navy);padding:18px 54px 18px 22px;list-style:none;position:relative;min-height:56px;font-size:.98rem;line-height:1.4}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2.5px solid var(--red);border-bottom:2.5px solid var(--red);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details .ans{padding:0 22px 20px;color:var(--ink-soft);font-size:.95rem}
+details .ans p:last-child{margin:0}
+
+/* ---------- cta final + rodapé ---------- */
+.final{background:radial-gradient(700px 300px at 50% -20%,rgba(216,0,8,.35),transparent 70%),linear-gradient(160deg,#0a3a78,#061a3a);text-align:center;color:#fff}
+.final h2{color:#fff}
+.final p{color:#c5d7ee;max-width:52ch;margin-left:auto;margin-right:auto}
+.final .btn{max-width:440px;margin:10px auto 0}
+.final .hrs{font-size:.85rem;color:#8fa9c9;margin-top:16px}
+footer.site{background:#040f24;color:#8ea6c6;font-size:.84rem;padding:40px 0 44px}
+footer.site .cols{display:grid;gap:24px}
+footer.site b{color:#fff}
+footer.site a{color:#c9daf0}
+footer.site p{margin:0 0 .5em}
+footer.site img{width:64px;height:64px;border-radius:50%;background:#fff;display:block;margin-bottom:14px}
+footer.site .legal{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:.8rem;color:#7d95b6;display:flex;flex-direction:column;gap:10px}
+footer.site .legal p{margin:0}
+footer.site .legal-links{display:flex;flex-wrap:wrap;gap:8px 22px}
+footer.site .legal-links a{color:#c9daf0;text-decoration:underline;text-underline-offset:3px}
+footer.site .legal-links a:hover{color:#fff}
+
+/* ---------- barra fixa no celular ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));box-shadow:0 -10px 28px rgba(6,26,58,.12)}
+.sticky .btn{width:100%}
+
+/* ---------- desktop ---------- */
+@media (min-width:820px){
+  body{font-size:17px;padding-bottom:0}
+  section{padding:96px 0}
+  .nav{display:flex;gap:26px}
+  .top .btn{display:inline-flex}
+  .hero{padding:84px 0 92px}
+  .hero-grid{grid-template-columns:1.2fr .8fr;align-items:center;gap:64px}
+  .hero-cta{flex-direction:row;align-items:center;gap:14px}
+  .strip ul{grid-template-columns:repeat(4,auto);justify-content:space-between}
+  .grid.c4{grid-template-columns:1fr 1fr}
+  .checks{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .band{padding:56px}
+  .track{margin:0;padding:4px 0 20px}
+  .slide{flex-basis:calc((100% - 32px)/3);scroll-snap-align:start}
+  .ctrl{justify-content:flex-start}
+  .dots{display:none}
+  .vids{margin:32px 0 0;padding:4px 0 18px}
+  .vcard{flex:0 0 255px;scroll-snap-align:start}
+  .quotes{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .flow li{flex-direction:column}
+  .local{grid-template-columns:1fr 1fr}
+  footer.site .cols{grid-template-columns:1.2fr 1fr 1fr}
+  footer.site .legal{flex-direction:row;justify-content:space-between;align-items:center}
+  .sticky{display:none}
+}
+@media (min-width:1040px){.grid.c4{grid-template-columns:repeat(4,1fr)}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.track{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Rangel Climatizadores, início">
+      <img src="assets/logo.png" width="52" height="52" alt="">
+      <span><b>Rangel Climatizadores</b><small>Distribuidor DENSO</small></span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#para-quem">Para quem</a>
+      <a href="#programa">Conteúdo</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#local">Local</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-sm" data-wa="topo" href="#">Falar no WhatsApp</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill">Curso presencial · Tupanciretã (RS)</span>
+      <h1>Curso de <span style="white-space:nowrap">ar-condicionado</span> <em>automotivo e agrícola</em></h1>
+      <p class="lead">Conteúdo técnico e prático, com produtos DENSO, para você trabalhar com mais segurança e profissionalismo. Turma pequena, certificado e suporte depois do curso.</p>
+      <div class="hero-cta">
+        <a class="btn" data-wa="hero" href="#">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+          Quero saber da próxima turma
+        </a>
+        <a class="btn btn-ghost" href="#programa">Ver o conteúdo</a>
+      </div>
+      <p class="hero-note">Resposta direto no WhatsApp. Sem compromisso.</p>
+    </div>
+
+    <aside class="ticket" aria-label="Dados da próxima turma">
+      <span class="tag" id="tk-tag">Vagas limitadas</span>
+      <h2 id="tk-title">Próxima turma</h2>
+      <p class="sub" id="tk-sub">Em breve. Entre na lista de reserva e avisamos quando abrir.</p>
+      <dl>
+        <div><dt>Onde</dt><dd>Tupanciretã, RS</dd></div>
+        <div><dt>Duração</dt><dd>3 dias</dd></div>
+        <div><dt>Vagas</dt><dd>16 por turma</dd></div>
+        <div><dt>Certificado</dt><dd>Após o curso</dd></div>
+      </dl>
+      <a class="btn btn-block" data-wa="ticket" href="#">Reservar minha vaga</a>
+    </aside>
+  </div>
+</div>
+
+<div class="strip">
+  <div class="wrap">
+    <ul>
+      <li>Distribuidor DENSO</li>
+      <li>Representante oficial DENSO na Região Central do RS</li>
+      <li>Linha leve e agrícola</li>
+      <li>Alunos de várias cidades do RS</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ================= PARA QUEM ================= -->
+<section id="para-quem">
+  <div class="wrap">
+    <span class="eyebrow"><i>01</i> Para quem é</span>
+    <h2>Escolha o seu caso</h2>
+    <p class="lead">O curso é para quem quer entrar na área, se aperfeiçoar ou aumentar a qualidade do serviço que já entrega.</p>
+
+    <div class="grid c4">
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>Tenho oficina e quero atender ar-condicionado direito</h3>
+        <p>Você já mexe com carro e não quer mandar o cliente embora, nem entregar o serviço no palpite.</p>
+        <a class="go" data-wa="oficina" href="#">Falar no WhatsApp →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6.6M12 14.4V21M3 12h6.6M14.4 12H21"/></svg></div>
+        <h3>Trabalho com máquina agrícola e linha pesada</h3>
+        <p>Trator, colheitadeira, pulverizador. Ar-condicionado quebrado na cabine, em plena safra, atrapalha o serviço. Aqui tem conteúdo agrícola de verdade.</p>
+        <a class="go" data-wa="agricola" href="#">Falar no WhatsApp →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg></div>
+        <h3>Sou dono de granja, oficina ou frota</h3>
+        <p>Quer que o funcionário saiba resolver em casa. Em turmas recentes, donos de granja pagaram o curso para a equipe.</p>
+        <a class="go" data-wa="empresa" href="#">Matricular um funcionário →</a>
+      </article>
+      <article class="card">
+        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></div>
+        <h3>Estou começando na área</h3>
+        <p>Dá para começar, mas com os pés no chão: veja abaixo o que o curso entrega e o que ele não promete.</p>
+        <a class="go" data-wa="iniciante" href="#">Tirar minha dúvida →</a>
+      </article>
+    </div>
+
+    <div class="honest">
+      <h3>O que a gente não promete</h3>
+      <ul>
+        <li>Não prometemos quanto você vai ganhar. Renda depende de cliente, cidade e do seu trabalho.</li>
+        <li>Três dias não fazem um mestre. Fazem você diagnosticar com método e saber por onde começar. A velocidade vem com o serviço, e por isso existe o suporte depois.</li>
+        <li>Não é curso gravado. É presencial, com turma pequena, para você ver e fazer.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE ACOMPANHA ================= -->
+<section class="white" id="curso">
+  <div class="wrap">
+    <span class="eyebrow"><i>02</i> O que acompanha</span>
+    <h2>Menos teoria solta, mais serviço de verdade</h2>
+    <ul class="checks">
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Conteúdo técnico e prático</b>Para o automotivo e para o agrícola.</span></li>
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Produtos DENSO</b>Você conhece o que está instalando.</span></li>
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Orientação para comprar as ferramentas certas</b>Sem gastar com o que não precisa.</span></li>
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Suporte depois do curso</b>Para a dúvida que aparece no primeiro serviço.</span></li>
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Certificado</b>Entregue após o curso.</span></li>
+      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Turma de até 16 pessoas</b>Com gente de diferentes empresas.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= PROGRAMA ================= -->
+<section id="programa">
+  <div class="wrap">
+    <span class="eyebrow"><i>03</i> Conteúdo</span>
+    <h2>O que você vai ver</h2>
+    <p class="lead">Do funcionamento ao diagnóstico, do carro à máquina agrícola.</p>
+    <ol class="steps">
+      <li><b>Como o sistema funciona</b><span>O ciclo do ar-condicionado e a função de cada componente.</span></li>
+      <li><b>Diagnóstico: por que não gela?</b><span>Um caminho de raciocínio para achar o defeito, em vez de trocar peça no chute.</span></li>
+      <li><b>Linha leve (automotivo)</b><span>Manutenção e reparo em carros de passeio e utilitários.</span></li>
+      <li><b>Linha agrícola e pesada</b><span>Particularidades de tratores, colheitadeiras e outras máquinas.</span></li>
+      <li><b>Ferramentas e equipamentos</b><span>O que comprar primeiro, o que dá para deixar para depois.</span></li>
+      <li><b>Produtos DENSO</b><span>Conhecer a linha e saber aplicar.</span></li>
+    </ol>
+    <p class="small" style="margin-top:20px">Cada turma tem parte prática. O conteúdo exato pode variar de uma turma para outra: confirme os detalhes no WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ================= EMPRESAS / GRANJAS ================= -->
+<section id="empresas" style="padding-top:0">
+  <div class="wrap">
+    <div class="band">
+      <div class="inner">
+        <span class="eyebrow">Para donos de granja, oficina e frota</span>
+        <h2>Ar-condicionado quebrado em plena safra atrapalha a operação inteira.</h2>
+        <p>Capacitar quem já trabalha na sua operação é uma forma de resolver isso dentro de casa. Em turmas recentes, donos de granja pagaram o curso para os seus funcionários.</p>
+        <p>Você pode matricular uma pessoa ou mais. Fale no WhatsApp e a gente combina.</p>
+        <a class="btn" data-wa="empresa" href="#">Matricular um funcionário</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALERIA (carrossel) ================= -->
+<section class="dark on-dark" id="galeria">
+  <div class="wrap">
+    <span class="eyebrow"><i>04</i> Como são as turmas</span>
+    <h2>Turma pequena, mão na massa</h2>
+    <p class="lead">Fotos das turmas da Rangel, em Tupanciretã. Toque numa foto para ampliar.</p>
+    <div class="car">
+      <div class="track" id="track" tabindex="0" aria-label="Fotos das turmas"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section id="depoimentos">
+  <div class="wrap">
+    <span class="eyebrow"><i>05</i> Quem fez, conta</span>
+    <h2>Gente de várias cidades do RS já passou por aqui</h2>
+    <p class="lead">Nas últimas turmas, os alunos vieram de:</p>
+    <ul class="chips">
+      <li>Frederico Westphalen</li>
+      <li>Júlio de Castilhos</li>
+      <li>Palmeira das Missões</li>
+      <li>Jóia</li>
+      <li>Quevedos</li>
+      <li>Santa Maria</li>
+      <li class="soft">Funcionários de granja do município</li>
+    </ul>
+
+    <div class="vids" id="vids" aria-label="Depoimentos em vídeo"></div>
+    <div class="quotes" id="quotes"></div>
+
+    <p style="margin-top:28px"><a class="btn btn-line" href="https://www.instagram.com/rangelclimatizadores/" target="_blank" rel="noopener">Ver mais no Instagram</a></p>
+  </div>
+</section>
+
+<!-- ================= COMO GARANTIR + LOCAL ================= -->
+<section class="white" id="local">
+  <div class="wrap">
+    <span class="eyebrow"><i>06</i> Sua vaga</span>
+    <h2>Como garantir a sua</h2>
+    <ol class="flow">
+      <li><span><b>Chame no WhatsApp</b><span>Conte o que você faz hoje e peça a data da próxima turma.</span></span></li>
+      <li><span><b>Reserve a vaga</b><span>São 16 por turma. O valor e a forma de pagamento a gente combina na conversa.</span></span></li>
+      <li><span><b>Faça o curso</b><span>Três dias presenciais e certificado ao final.</span></span></li>
+    </ol>
+
+    <div class="local">
+      <div class="card">
+        <h3>Onde é o curso</h3>
+        <address>Rua Alcides Gomes, 257<br>Bairro Juliana, Tupanciretã, RS</address>
+        <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=Rua+Alcides+Gomes+257+Juliana+Tupanciret%C3%A3+RS" target="_blank" rel="noopener">Ver no mapa</a>
+      </div>
+      <div class="card">
+        <h3>Loja e oficina</h3>
+        <address>Av. Serafim Bravo, 210<br>Tupanciretã, RS</address>
+        <p class="hrs">Atendimento: segunda a sexta, das 8h às 18h.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap">
+    <span class="eyebrow"><i>07</i> Dúvidas comuns</span>
+    <h2>Antes de decidir</h2>
+
+    <details>
+      <summary>Em três dias eu saio sabendo tudo?</summary>
+      <div class="ans"><p>Não, e desconfie de quem diz que sim. Em três dias você aprende o método, vê o serviço sendo feito e sai sabendo por onde começar. A prática do dia a dia faz o resto, e por isso a Rangel oferece suporte depois do curso.</p></div>
+    </details>
+    <details>
+      <summary>Preciso ter experiência?</summary>
+      <div class="ans"><p>O curso atende quem quer entrar no mercado e quem já trabalha e quer se aperfeiçoar. Conte no WhatsApp qual é o seu caso e a gente diz com franqueza se a próxima turma serve para você.</p></div>
+    </details>
+    <details>
+      <summary>Serve para máquina agrícola?</summary>
+      <div class="ans"><p>Sim. O curso cobre o automotivo e o agrícola. Se você trabalha com um tipo específico de máquina, pergunte no WhatsApp.</p></div>
+    </details>
+    <details>
+      <summary>Tem certificado?</summary>
+      <div class="ans"><p>Sim. Você recebe o certificado após o curso.</p></div>
+    </details>
+    <details>
+      <summary>Vou saber quais ferramentas comprar?</summary>
+      <div class="ans"><p>Sim. A orientação para escolher e comprar as ferramentas certas faz parte do curso.</p></div>
+    </details>
+    <details>
+      <summary>Quanto custa e como pago?</summary>
+      <div class="ans"><p>O valor e a forma de pagamento são combinados no WhatsApp, junto com as informações da próxima turma.</p></div>
+    </details>
+    <details>
+      <summary>Moro em outra cidade. Como faço?</summary>
+      <div class="ans"><p>Nas últimas turmas vieram alunos de Frederico Westphalen, Júlio de Castilhos, Palmeira das Missões, Jóia, Quevedos e Santa Maria. Para combinar viagem e hospedagem, fale no WhatsApp.</p></div>
+    </details>
+    <details>
+      <summary>Onde é o curso?</summary>
+      <div class="ans"><p>Na Rua Alcides Gomes, 257, Bairro Juliana, em Tupanciretã (RS).</p></div>
+    </details>
+    <details>
+      <summary>Como garanto minha vaga?</summary>
+      <div class="ans"><p>Chame no WhatsApp. São 16 vagas por turma. Se a turma estiver cheia, você entra na lista de reserva da próxima.</p></div>
+    </details>
+    <details>
+      <summary>Quando é a próxima turma?</summary>
+      <div class="ans"><p id="faq-turma">Em breve teremos o lançamento da nova turma. Entre na lista de reserva pelo WhatsApp e avisamos.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final">
+  <div class="wrap">
+    <h2>Fale com a Rangel e tire suas dúvidas</h2>
+    <p>Conte o que você faz hoje e pergunte o que quiser. A conversa é direta, no WhatsApp.</p>
+    <a class="btn btn-block" data-wa="final" href="#">Chamar no WhatsApp</a>
+    <p class="hrs">Atendimento de segunda a sexta, das 8h às 18h.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="assets/logo.png" width="64" height="64" alt="Rangel Climatizadores">
+        <p><b>Rangel Climatizadores</b></p>
+        <p>CNPJ 10.695.707/0001-13</p>
+      </div>
+      <div>
+        <p><b>Curso</b><br>Rua Alcides Gomes, 257<br>Bairro Juliana, Tupanciretã, RS</p>
+        <p><b>Loja e oficina</b><br>Av. Serafim Bravo, 210<br>Tupanciretã, RS</p>
+      </div>
+      <div>
+        <p><b>Atendimento</b><br>Segunda a sexta, das 8h às 18h</p>
+        <p><a href="https://www.instagram.com/rangelclimatizadores/" target="_blank" rel="noopener">@rangelclimatizadores</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <p>© <span id="ano">2026</span> Rangel Climatizadores. Todos os direitos reservados.</p>
+      <nav class="legal-links" aria-label="Documentos legais">
+        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+        <a href="termos-de-uso.html">Termos de Uso</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<div class="lb hide" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+  <button class="lb-x" type="button" aria-label="Fechar">×</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-nav lb-p" type="button" aria-label="Foto anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-nav lb-n" type="button" aria-label="Próxima foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+
+<div class="sticky">
+  <a class="btn" data-wa="sticky" href="#">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+    Falar no WhatsApp
+  </a>
+</div>
+
+<script>
+/* ==================== CONFIG: edite só aqui ==================== */
+var CONFIG = {
+  // Número completo: 55 (Brasil) + 55 (DDD) + 996250528
+  whatsapp: "5555996250528",
+
+  // Data da próxima turma, por extenso. Ex.: "16 a 18 de outubro, às 8h".
+  // Vazio = "Em breve" com lista de reserva.
+  proximaTurma: "",
+
+  // ID do pixel da Meta (só números). Vazio = sem pixel.
+  pixelId: "",
+
+  // FOTOS DO CARROSSEL. Arquivos em assets/fotos/. Para trocar ou acrescentar, é só editar a lista.
+  // Lista vazia = mostra espaços reservados.
+  fotos: [
+    {src:"assets/fotos/turma-trator-denso.jpg",        legenda:"Turma com trator e equipamento DENSO"},
+    {src:"assets/fotos/aula-pratica-compressor.jpg",   legenda:"Parte prática: aula com compressor na bancada"},
+    {src:"assets/fotos/turma-trator-capo-aberto.jpg",  legenda:"Turma reunida ao lado do trator"},
+    {src:"assets/fotos/turma-caminhao-denso.jpg",      legenda:"Linha pesada: caminhão e equipamento DENSO"}
+  ],
+
+  // VÍDEOS DE DEPOIMENTO. Duas formas por item:
+  //   {ig:"CODIGO_DO_REEL", nome:"", detalhe:""}       mostra o reel do Instagram na página
+  //   {src:"assets/videos/x.mp4", poster:"assets/videos/x.jpg", nome:"", detalhe:""}  vídeo próprio (melhor)
+  videos: [
+    {ig:"DdM8MLeRBQ6", nome:"Anderson", detalhe:"Jóia (RS) · Ar-condicionado agrícola"},
+    {ig:"Dc9sCZoRTJy", nome:"Daniel",   detalhe:"Treinamento avançado agrícola"},
+    {ig:"DbMdID8R7QS", nome:"Érick",    detalhe:"Frederico Westphalen (RS) · Automotivo e agrícola"},
+    {ig:"DbwjSmtxI67", nome:"Depoimento de aluno", detalhe:"Rangel + DENSO"}
+  ],
+
+  // DEPOIMENTOS EM TEXTO (autorizados pelos alunos). Pode incluir vários.
+  depoimentos: [
+    {texto:"Foi uma experiência muito boa, com bastante aprendizado e conhecimentos que vou poder aplicar no dia a dia profissional. O conteúdo foi muito bem explicado, com uma ótima parte prática.", autor:"Aluno do curso"}
+  ]
+};
+
+/* Mensagens pré-preenchidas por botão */
+var MSG = {
+  topo:     "Olá! Vi a página do curso de ar-condicionado e quero saber da próxima turma.",
+  hero:     "Olá! Vi a página do curso de ar-condicionado automotivo e agrícola e quero saber da próxima turma.",
+  ticket:   "Olá! Quero reservar minha vaga na próxima turma do curso de ar-condicionado.",
+  oficina:  "Olá! Tenho oficina e quero saber do curso de ar-condicionado.",
+  agricola: "Olá! Trabalho com máquina agrícola e quero saber do curso de ar-condicionado.",
+  empresa:  "Olá! Tenho granja/empresa e quero saber como matricular um funcionário no curso.",
+  iniciante:"Olá! Estou começando na área e tenho dúvidas sobre o curso de ar-condicionado.",
+  final:    "Olá! Tenho uma dúvida sobre o curso de ar-condicionado.",
+  sticky:   "Olá! Vi a página do curso de ar-condicionado e quero saber da próxima turma."
+};
+
+(function(){
+  function el(tag, cls, html){ var e=document.createElement(tag); if(cls) e.className=cls; if(html!=null) e.innerHTML=html; return e; }
+  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
+
+  var q = new URLSearchParams(location.search);
+  var origem = q.get("utm_source") || "";
+  var camp = q.get("utm_campaign") || "";
+  var sufixo = origem ? " (origem: " + origem + (camp ? " / " + camp : "") + ")" : "";
+
+  /* Pixel opcional */
+  if (CONFIG.pixelId) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.pixelId);
+    fbq('track', 'PageView');
+  }
+
+  /* Links do WhatsApp */
+  document.querySelectorAll("a[data-wa]").forEach(function(a){
+    var k = a.getAttribute("data-wa");
+    a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent((MSG[k] || MSG.final) + sufixo);
+    a.target = "_blank"; a.rel = "noopener";
+    a.addEventListener("click", function(){
+      if (window.fbq) { try { fbq("track", "Contact", {content_name: k}); } catch(e){} }
+    });
+  });
+
+  var ano=document.getElementById("ano"); if(ano) ano.textContent=new Date().getFullYear();
+
+  /* Próxima turma */
+  if (CONFIG.proximaTurma) {
+    document.getElementById("tk-title").textContent = CONFIG.proximaTurma;
+    document.getElementById("tk-sub").textContent = "Vagas limitadas: 16 por turma.";
+    document.getElementById("tk-tag").textContent = "Turma aberta";
+    document.getElementById("faq-turma").textContent = "A próxima turma é: " + CONFIG.proximaTurma + ". As vagas são limitadas, então chame no WhatsApp para garantir a sua.";
+  }
+
+  /* Setas + pontinhos: funcionam no celular e no computador */
+  var ARR_L='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
+  var ARR_R='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
+  var updaters = [];
+  function carousel(track){
+    var ctrl = el("div","ctrl",'<button type="button" class="cb cb-prev" aria-label="Anterior">'+ARR_L+'</button><div class="dots"></div><button type="button" class="cb cb-next" aria-label="Próximo">'+ARR_R+'</button>');
+    track.parentNode.insertBefore(ctrl, track.nextSibling);
+    var prev = ctrl.querySelector(".cb-prev"), next = ctrl.querySelector(".cb-next"), dots = ctrl.querySelector(".dots");
+    function items(){ return Array.prototype.slice.call(track.children); }
+    function pos(i){ var it = items()[i]; return it.offsetLeft - (track.clientWidth - it.offsetWidth)/2; }
+    function go(i){ track.scrollTo({left: Math.max(0, pos(i)), behavior:"smooth"}); }
+    function step(){ var it = items()[0]; return it ? it.offsetWidth + 16 : 240; }
+    function cur(){
+      var c = track.scrollLeft + track.clientWidth/2, best = 0, bd = 1e9;
+      items().forEach(function(it,i){ var d = Math.abs(it.offsetLeft + it.offsetWidth/2 - c); if (d < bd) { bd = d; best = i; } });
+      return best;
+    }
+    function update(){
+      ctrl.classList.toggle("hide", !(track.scrollWidth > track.clientWidth + 4));
+      var i = cur();
+      Array.prototype.forEach.call(dots.children, function(d,k){ d.classList.toggle("on", k === i); });
+      prev.disabled = track.scrollLeft <= 2;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    }
+    items().forEach(function(it,i){
+      var d = el("button","dot"); d.type = "button"; d.setAttribute("aria-label","Ir para "+(i+1)+" de "+track.children.length);
+      d.addEventListener("click", function(){ go(i); }); dots.appendChild(d);
+    });
+    prev.addEventListener("click", function(){ track.scrollBy({left:-step(), behavior:"smooth"}); });
+    next.addEventListener("click", function(){ track.scrollBy({left: step(), behavior:"smooth"}); });
+    track.addEventListener("keydown", function(e){
+      if (e.key === "ArrowRight") track.scrollBy({left: step(), behavior:"smooth"});
+      if (e.key === "ArrowLeft")  track.scrollBy({left:-step(), behavior:"smooth"});
+    });
+    track.addEventListener("scroll", update, {passive:true});
+    updaters.push(update); update();
+  }
+
+  /* Carrossel de fotos (espaços reservados se CONFIG.fotos estiver vazio) */
+  var track = document.getElementById("track");
+  var fotos = (CONFIG.fotos && CONFIG.fotos.length) ? CONFIG.fotos : [
+    {legenda:"Turma de julho"}, {legenda:"Turma de setembro"}, {legenda:"Parte prática"}, {legenda:"Alunos e instrutores"}
+  ];
+  var lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
+  var lbList = [], lbI = 0, lbFrom = null;
+  function lbShow(i){
+    lbI = (i + lbList.length) % lbList.length;
+    var f = lbList[lbI];
+    lbImg.src = f.src; lbImg.alt = f.legenda || "Foto da turma"; lbCap.textContent = f.legenda || "";
+  }
+  function lbOpen(i, from){
+    lbFrom = from; lbShow(i); lb.classList.remove("hide"); document.body.style.overflow = "hidden";
+    lb.querySelector(".lb-x").focus();
+  }
+  function lbClose(){
+    lb.classList.add("hide"); document.body.style.overflow = ""; lbImg.removeAttribute("src");
+    if (lbFrom) lbFrom.focus();
+  }
+  lb.querySelector(".lb-x").addEventListener("click", lbClose);
+  lb.querySelector(".lb-p").addEventListener("click", function(){ lbShow(lbI - 1); });
+  lb.querySelector(".lb-n").addEventListener("click", function(){ lbShow(lbI + 1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb || e.target.tagName === "FIGURE") lbClose(); });
+  document.addEventListener("keydown", function(e){
+    if (lb.classList.contains("hide")) return;
+    if (e.key === "Escape") lbClose();
+    if (e.key === "ArrowRight") lbShow(lbI + 1);
+    if (e.key === "ArrowLeft") lbShow(lbI - 1);
+  });
+  var tx = null;
+  lb.addEventListener("touchstart", function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener("touchend", function(e){
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 50) lbShow(lbI + (dx < 0 ? 1 : -1));
+  });
+
+  fotos.forEach(function(f){
+    var fig = el("figure","slide");
+    if (f.src) {
+      var idx = lbList.length; lbList.push(f);
+      fig.innerHTML = '<div class="pic"><img class="bgimg" loading="lazy" src="'+esc(f.src)+'" alt=""><img class="foto" loading="lazy" src="'+esc(f.src)+'" alt="'+esc(f.legenda||"Foto da turma")+'"></div>';
+      fig.setAttribute("role","button"); fig.tabIndex = 0;
+      fig.setAttribute("aria-label","Ampliar foto: "+(f.legenda||"turma"));
+      fig.addEventListener("click", function(){ lbOpen(idx, fig); });
+      fig.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " ") { e.preventDefault(); lbOpen(idx, fig); } });
+    } else {
+      fig.innerHTML = '<div class="pic"><img class="ph" src="assets/logo.png" alt=""><span class="ph-tag">Espaço para foto</span></div>';
+    }
+    if (f.legenda) fig.appendChild(el("figcaption",null,esc(f.legenda)));
+    track.appendChild(fig);
+  });
+  carousel(track);
+
+  /* Vídeos de depoimento: o vídeo aparece direto na página */
+  var vids = document.getElementById("vids");
+  var igBoxes = [];
+  if (!CONFIG.videos || !CONFIG.videos.length) vids.classList.add("hide");
+  (CONFIG.videos || []).forEach(function(v){
+    var card = el("div","vcard"), box = el("div","vbox"), node;
+    if (v.src) {
+      node = el("video"); node.controls = true; node.playsInline = true; node.preload = "metadata";
+      if (v.poster) node.poster = v.poster;
+      node.src = v.src; box.classList.add("vfile");
+    } else {
+      node = el("iframe","vig");
+      node.src = "https://www.instagram.com/reel/"+encodeURIComponent(v.ig)+"/embed/";
+      node.loading = "lazy"; node.setAttribute("scrolling","no"); node.setAttribute("allowfullscreen","");
+      node.title = "Depoimento de "+(v.nome||"aluno");
+      igBoxes.push(box);
+    }
+    box.appendChild(node); card.appendChild(box);
+    var cap = el("div","vcap",'<b>'+esc(v.nome||"Depoimento")+'</b><span>'+esc(v.detalhe||"")+'</span>');
+    if (v.ig) cap.innerHTML += '<a href="https://www.instagram.com/reel/'+encodeURIComponent(v.ig)+'/" target="_blank" rel="noopener">Abrir no Instagram</a>';
+    card.appendChild(cap); vids.appendChild(card);
+  });
+  /* o player do Instagram tem cabeçalho e rodapé fixos: corta a parte de curtidas e comentários */
+  function sizeIg(){
+    igBoxes.forEach(function(b){
+      var h = Math.round(b.clientWidth * 1.25 + 98);
+      b.style.height = h + "px"; b.firstChild.style.height = (h + 240) + "px";
+    });
+  }
+  sizeIg();
+  carousel(vids);
+  window.addEventListener("resize", function(){ sizeIg(); updaters.forEach(function(u){ u(); }); });
+  window.addEventListener("load", function(){ sizeIg(); updaters.forEach(function(u){ u(); }); });
+
+  /* Depoimentos em texto */
+  var quotes = document.getElementById("quotes");
+  (CONFIG.depoimentos || []).forEach(function(d){
+    var bq = el("blockquote",null,'<p>“'+esc(d.texto)+'”</p><footer>'+esc(d.autor||"Aluno do curso")+'</footer>');
+    quotes.appendChild(bq);
+  });
+})();
+</script>
+</body>
+</html>
