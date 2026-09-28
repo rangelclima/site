@@ -1,988 +1,2241 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Domine o Ar-Condicionado e Eleve Seu Nível Profissional | Rangel Climatizadores</title>
-<meta name="description" content="Curso presencial de 2 dias em Tupanciretã (RS) para aprender diagnóstico e manutenção de ar-condicionado agrícola e automotivo. Turmas de até 16 alunos, prática, certificado e suporte após o curso.">
-<meta property="og:title" content="Curso presencial de ar-condicionado agrícola e automotivo | Rangel Climatizadores">
-<meta property="og:description" content="Turmas em Tupanciretã (RS). Conteúdo técnico e prático, linha agrícola e leve, certificado e suporte depois do curso.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/logo.png">
-<meta name="theme-color" content="#061a3a">
-<link rel="icon" href="assets/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Meta Pixel -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1101532125624926');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1101532125624926&ev=PageView&noscript=1"/></noscript>
-<!-- Fim Meta Pixel -->
+  <title>Rangel Climatizadores | Climatização Agrícola e Automotiva</title>
 
-<!--
-=====================================================================
-  RANGEL CLIMATIZADORES — PÁGINA DO CURSO — versão Direct Response, 27/09/2026
-  Ordem agrícola/automotivo invertida em 27/09/2026: agrícola vem primeiro
-  em todo o texto (head, hero, checklist, programa, para-quem, FAQ) e os
-  passos "Linha agrícola e pesada" / "Linha leve (automotivo)" e os cards
-  "máquina agrícola" / "oficina" trocaram de posição no programa e na
-  seção "Para quem".
+  <meta
+    name="description"
+    content="Especialistas em climatização agrícola e automotiva. Manutenção, diagnóstico e formação profissional com experiência prática e tecnologia DENSO."
+  >
 
-  ARQUIVOS: publique a pasta inteira (index.html + assets/).
-  COMO EDITAR: fotos, vídeos, depoimentos, data da turma, WhatsApp e
-  pixel ficam no bloco CONFIG, no fim deste arquivo.
-  Sem preço na página (decisão do Rangel). Valor e pagamento: WhatsApp.
-=====================================================================
--->
+  <link rel="icon" href="assets/logo.png" type="image/png">
 
-<style>
-@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Regular.woff") format("woff")}
-@font-face{font-family:"Poppins";font-weight:500;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Medium.woff") format("woff")}
-@font-face{font-family:"Poppins";font-weight:700;font-style:normal;font-display:swap;src:url("assets/fonts/poppins-Bold.woff") format("woff")}
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1101532125624926');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1101532125624926&ev=PageView&noscript=1"/></noscript>
+  <!-- Fim Meta Pixel -->
 
-:root{
-  /* paleta tirada do logo: vermelho RANGEL + azul das ondas */
-  --red:#d80008;
-  --red-dark:#b00006;
-  --blue:#004890;
-  --blue-2:#0a5cb8;
-  --navy:#061a3a;
-  --navy-2:#0a2a5c;
-  --ink:#0b1630;
-  --ink-soft:#4a5875;
-  --bg:#f4f6fa;
-  --card:#ffffff;
-  --line:#e0e6f0;
-  --tint:#e8f0fa;
-  --radius:18px;
-  --gut:20px;
-  --shadow:0 1px 2px rgba(6,26,58,.05),0 12px 32px -12px rgba(6,26,58,.16);
-  --font:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);
-  font-size:16px;line-height:1.65;padding-bottom:78px;-webkit-text-size-adjust:100%;
-}
-img,svg{max-width:100%}
-a{color:var(--blue-2)}
-[id]{scroll-margin-top:84px}
-.wrap{max-width:1120px;margin:0 auto;padding:0 var(--gut)}
-h1,h2,h3{margin:0 0 .5em;color:var(--navy);font-weight:700;letter-spacing:-.02em;line-height:1.15}
-h1{font-size:clamp(1.95rem,7.2vw,3.3rem)}
-h2{font-size:clamp(1.65rem,5.4vw,2.6rem)}
-h3{font-size:1.1rem;letter-spacing:-.01em;line-height:1.3}
-p{margin:0 0 1em}
-section{padding:64px 0}
-.lead{font-size:1.06rem;color:var(--ink-soft);max-width:58ch}
-.small{font-size:.88rem;color:var(--ink-soft)}
-.hide{display:none!important}
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.eyebrow{display:flex;align-items:center;gap:12px;font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-2);margin-bottom:16px}
-.eyebrow i{font-style:normal;color:var(--red)}
-.eyebrow::after{content:"";height:1px;width:44px;background:currentColor;opacity:.35}
-.on-dark .eyebrow{color:#8fc0f5}
-.on-dark .eyebrow i{color:#ff6b70}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
 
-/* ---------- header ---------- */
-.top{position:sticky;top:0;z-index:60;background:rgba(6,26,58,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0}
-.brand img{width:52px;height:52px;border-radius:50%;background:#fff;flex:none;display:block}
-.brand b{display:block;font-size:.98rem;line-height:1.1;letter-spacing:-.01em}
-.brand small{display:block;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:#93b3d9;margin-top:3px}
-.nav{display:none}
-.nav a{color:#c9daf0;text-decoration:none;font-size:.88rem;font-weight:500;padding:8px 2px;position:relative}
-.nav a:hover{color:#fff}
-.top .btn{display:none}
+  <style>
 
-/* ---------- botões ---------- */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  background:var(--red);color:#fff;text-decoration:none;font-family:var(--font);font-weight:700;font-size:1rem;
-  padding:16px 26px;border-radius:14px;border:0;cursor:pointer;min-height:54px;letter-spacing:-.005em;
-  box-shadow:0 10px 24px -8px rgba(216,0,8,.55);transition:background .18s,transform .18s,box-shadow .18s;
-}
-.btn:hover{background:var(--red-dark);transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.btn:focus-visible,summary:focus-visible,.cb:focus-visible,.dot:focus-visible{outline:3px solid #ffb703;outline-offset:3px}
-.btn svg{flex:none}
-.btn-block{display:flex;width:100%}
-.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);box-shadow:none}
-.btn-ghost:hover{background:rgba(255,255,255,.08);transform:none}
-.btn-line{background:transparent;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
-.btn-line:hover{background:var(--navy);color:#fff}
-.btn-sm{padding:10px 18px;min-height:44px;font-size:.9rem;border-radius:12px;box-shadow:none}
+    /* =========================================================
+       1. VARIÁVEIS
+    ========================================================= */
 
-/* ---------- hero ---------- */
-.hero{
-  position:relative;overflow:hidden;color:#fff;padding:44px 0 56px;
-  background:
-    radial-gradient(900px 420px at 88% -8%,rgba(10,92,184,.6),transparent 62%),
-    radial-gradient(600px 300px at -5% 110%,rgba(216,0,8,.22),transparent 60%),
-    linear-gradient(180deg,#061a3a 0%,#08224b 100%);
-}
-.hero::before{
-  content:"";position:absolute;inset:0;opacity:1;pointer-events:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='90' viewBox='0 0 260 90'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.05' stroke-width='2'%3E%3Cpath d='M0 20 Q32 2 65 20 T130 20 T195 20 T260 20'/%3E%3Cpath d='M0 45 Q32 27 65 45 T130 45 T195 45 T260 45'/%3E%3Cpath d='M0 70 Q32 52 65 70 T130 70 T195 70 T260 70'/%3E%3C/g%3E%3C/svg%3E");
-  background-size:260px 90px;
-  -webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);mask-image:linear-gradient(180deg,#000,transparent 85%);
-}
-.hero .wrap{position:relative}
-.hero-grid{display:grid;gap:34px}
-.pill{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#dbe9fb;border:1px solid rgba(255,255,255,.22);padding:7px 14px;border-radius:99px;background:rgba(255,255,255,.05);margin-bottom:22px}
-.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:#ff4b52;box-shadow:0 0 0 4px rgba(255,75,82,.22)}
-.hero h1{color:#fff}
-.hero h1 em{font-style:normal;background:linear-gradient(transparent 82%,var(--red) 82%,var(--red) 94%,transparent 94%);padding:0 2px}
-.hero .lead{color:#c5d7ee;font-size:1.08rem}
-.hero-cta{display:flex;flex-direction:column;gap:12px;margin-top:26px}
-.hero-note{font-size:.82rem;color:#8fa9c9;margin:14px 0 0}
+    :root {
+      --blue-dark: #061A3A;
+      --blue: #004890;
+      --blue-light: #0A5CB8;
 
-.ticket{
-  background:linear-gradient(180deg,rgba(255,255,255,.1),rgba(255,255,255,.04));
-  border:1px solid rgba(255,255,255,.16);border-radius:22px;padding:24px;position:relative;
-  box-shadow:0 30px 60px -30px rgba(0,0,0,.6);
-}
-.ticket .tag{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:99px;margin-bottom:14px}
-.ticket h2{color:#fff;font-size:1.5rem;margin-bottom:.25em}
-.ticket .sub{color:#b6cbe6;font-size:.92rem;margin:0}
-.ticket dl{margin:20px 0 0;padding:20px 0 0;border-top:1px dashed rgba(255,255,255,.25);display:grid;grid-template-columns:1fr 1fr;gap:18px 12px}
-.ticket dt{font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;color:#8fb2dc;font-weight:700}
-.ticket dd{margin:3px 0 0;font-weight:700;color:#fff;font-size:1rem;line-height:1.3}
-.ticket .btn{margin-top:22px}
+      --red: #D80008;
 
-/* ---------- faixa de confiança ---------- */
-.strip{background:#fff;border-bottom:1px solid var(--line)}
-.strip ul{list-style:none;margin:0;padding:18px 0;display:grid;gap:12px 22px;grid-template-columns:1fr 1fr;font-size:.82rem;font-weight:500;color:var(--navy);line-height:1.35}
-.strip li{display:flex;gap:10px;align-items:flex-start}
-.strip li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--red);margin-top:.5em}
+      --white: #FFFFFF;
 
-/* ---------- cards ---------- */
-.grid{display:grid;gap:16px;margin-top:32px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
-.card:hover{transform:translateY(-3px)}
-.ico{width:48px;height:48px;border-radius:14px;background:var(--tint);color:var(--blue);display:grid;place-items:center;margin-bottom:16px}
-.card h3{margin-bottom:.4em}
-.card p{color:var(--ink-soft);font-size:.95rem;margin:0 0 14px}
-.card .go{font-weight:700;text-decoration:none;color:var(--red);font-size:.92rem}
-.card .go:hover{text-decoration:underline}
+      --gray: #F4F6FA;
+      --text: #162033;
+      --text-light: #637289;
 
-.honest{margin-top:32px;background:var(--navy);color:#dbe9fb;border-radius:var(--radius);padding:28px 24px;position:relative;overflow:hidden}
-.honest::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--red)}
-.honest h3{color:#fff;font-size:1.2rem;margin-bottom:.7em}
-.honest ul{margin:0;padding-left:1.2em}
-.honest li{margin:.5em 0;color:#c5d7ee;font-size:.96rem}
+      --border: #E5EAF2;
 
-/* ---------- alternância ---------- */
-.white{background:#fff}
-.dark{background:linear-gradient(180deg,#061a3a,#0a2a5c);color:#fff}
-.dark h2{color:#fff}
-.dark .lead{color:#b6cbe6}
+      --radius: 20px;
 
-/* ---------- o que acompanha ---------- */
-.checks{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:14px}
-.checks li{display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:.96rem;color:var(--ink-soft)}
-.checks li b{display:block;color:var(--navy);font-size:1rem;margin-bottom:2px}
-.checks .ck{flex:none;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;margin-top:2px}
-
-/* ---------- programa ---------- */
-.steps{counter-reset:s;list-style:none;padding:0;margin:32px 0 0;display:grid;gap:12px}
-.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 20px 18px 74px;position:relative;box-shadow:var(--shadow)}
-.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:20px;top:16px;font-weight:700;font-size:1.5rem;color:var(--red);letter-spacing:-.03em;line-height:1.3}
-.steps b{display:block;color:var(--navy);margin-bottom:2px}
-.steps span{color:var(--ink-soft);font-size:.92rem;display:block}
-
-/* ---------- empresas ---------- */
-.band{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);color:#fff;border-radius:26px;padding:36px 26px}
-.band::after{content:"";position:absolute;right:-70px;bottom:-70px;width:240px;height:240px;border-radius:50%;border:38px solid rgba(255,255,255,.05)}
-.band .inner{position:relative;max-width:640px}
-.band h2{color:#fff;font-size:clamp(1.5rem,5vw,2.2rem)}
-.band p{color:#c9dcf3}
-.band .eyebrow{color:#8fc0f5}
-
-/* ---------- carrossel de fotos ---------- */
-.car{position:relative;margin-top:32px}
-.track{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding:4px var(--gut) 20px;margin:0 calc(var(--gut) * -1);scrollbar-width:none}
-.track::-webkit-scrollbar{display:none}
-.slide{flex:0 0 82%;scroll-snap-align:center;margin:0;position:relative}
-.slide .pic{position:relative;aspect-ratio:1/1;border-radius:20px;overflow:hidden;background:linear-gradient(145deg,#12356b,#0a2a5c);border:1px solid rgba(255,255,255,.12)}
-.slide[role=button]{cursor:zoom-in}
-.slide[role=button]:focus-visible{outline:3px solid #ffb703;outline-offset:3px}
-.slide img.bgimg{position:absolute;left:-24px;top:-24px;width:calc(100% + 48px);height:calc(100% + 48px);max-width:none;object-fit:cover;filter:blur(22px) brightness(.62) saturate(1.15)}
-.slide img.ph{position:absolute;inset:0;margin:auto;width:30%;aspect-ratio:1;border-radius:50%;opacity:.22}
-.slide img.foto{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
-.slide figcaption{padding:12px 4px 0;font-size:.86rem;font-weight:500;color:#cfe1f7;line-height:1.4}
-.slide .ph-tag{position:absolute;left:16px;top:16px;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#cfe1f7;border:1px dashed rgba(255,255,255,.35);border-radius:99px;padding:5px 12px}
-/* setas + pontinhos (celular e computador) */
-.ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:4px;color:var(--navy)}
-.on-dark .ctrl{color:#fff}
-.cb{width:48px;height:48px;border-radius:50%;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer;display:grid;place-items:center;transition:background .15s,opacity .15s}
-.cb:hover:not(:disabled){background:rgba(127,160,200,.18)}
-.cb:disabled{opacity:.28;cursor:default}
-.dots{display:flex;align-items:center;gap:8px}
-.dot{position:relative;width:8px;height:8px;border-radius:99px;border:0;padding:0;background:currentColor;opacity:.3;cursor:pointer;transition:width .2s,opacity .2s,background .2s}
-.dot::after{content:"";position:absolute;inset:-12px -4px}
-.dot.on{width:24px;opacity:1;background:var(--red)}
-.on-dark .dot{opacity:.5}
-.on-dark .dot.on{opacity:1}
-
-/* ---------- foto ampliada ---------- */
-.lb{position:fixed;inset:0;z-index:100;background:rgba(4,15,36,.95);display:flex;align-items:center;justify-content:center;padding:64px 16px 24px}
-.lb figure{margin:0;text-align:center;max-width:100%}
-.lb img{display:block;margin:0 auto;max-width:100%;max-height:calc(100vh - 150px);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
-.lb figcaption{color:#cfe1f7;font-size:.9rem;margin-top:14px;padding:0 8px}
-.lb-x,.lb-nav{position:absolute;width:48px;height:48px;border-radius:50%;border:1.5px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);color:#fff;cursor:pointer;display:grid;place-items:center;font-family:var(--font)}
-.lb-x{top:12px;right:12px;font-size:1.6rem;line-height:1}
-.lb-x:hover,.lb-nav:hover{background:rgba(255,255,255,.18)}
-.lb-x:focus-visible,.lb-nav:focus-visible{outline:3px solid #ffb703;outline-offset:2px}
-.lb-nav{bottom:14px}
-.lb-p{left:calc(50% - 60px)}
-.lb-n{left:calc(50% + 12px)}
-@media(min-width:820px){.lb{padding:56px 96px}.lb img{max-height:calc(100vh - 130px)}.lb-nav{bottom:auto;top:50%;transform:translateY(-50%)}.lb-p{left:24px}.lb-n{left:auto;right:24px}}
-
-/* ---------- depoimentos ---------- */
-.vids{position:relative;display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--gut) 18px;margin:32px calc(var(--gut) * -1) 0;scrollbar-width:none}
-.vids::-webkit-scrollbar{display:none}
-.vcard{flex:0 0 78%;max-width:320px;scroll-snap-align:center}
-.vbox{position:relative;width:100%;border-radius:20px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
-.vbox .vig{position:absolute;left:0;top:0;width:100%;border:0;display:block;background:#fff}
-.vbox.vfile{background:#000}
-.vbox video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover}
-.vcap{padding:14px 4px 0}
-.vcap b{display:block;color:var(--navy);font-size:1rem;line-height:1.25}
-.vcap span{display:block;color:var(--ink-soft);font-size:.82rem;margin-top:2px}
-.vcap a{display:inline-block;margin-top:6px;font-size:.8rem;font-weight:700;color:var(--red);text-decoration:none}
-.vcap a:hover{text-decoration:underline}
-.quotes{display:grid;gap:16px;margin-top:20px}
-blockquote{margin:0;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:var(--radius);padding:24px 24px 20px;box-shadow:var(--shadow);max-width:820px}
-blockquote p{margin:0 0 .9em;color:var(--ink);font-size:1rem}
-blockquote footer{font-size:.82rem;color:var(--ink-soft);font-weight:500}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
-.chips li{background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-weight:500;font-size:.88rem;color:var(--navy)}
-.chips li.soft{background:var(--tint);border-color:#c5daf2}
-
-/* ---------- vaga + local ---------- */
-.flow{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:14px;counter-reset:f}
-.flow li{counter-increment:f;display:flex;gap:16px;align-items:flex-start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
-.flow li::before{content:counter(f);flex:none;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:grid;place-items:center}
-.flow b{display:block;color:var(--navy)}
-.flow span{font-size:.92rem;color:var(--ink-soft)}
-.local{margin-top:36px;display:grid;gap:16px}
-.local .card{padding:26px}
-.local h3{display:flex;align-items:center;gap:10px}
-.local address{font-style:normal;color:var(--ink-soft);margin:6px 0 16px}
-.local .hrs{margin:0;font-size:.9rem;color:var(--ink-soft)}
-
-/* ---------- faq ---------- */
-details{background:#fff;border:1px solid var(--line);border-radius:16px;margin:12px 0;box-shadow:var(--shadow)}
-summary{cursor:pointer;font-weight:700;color:var(--navy);padding:18px 54px 18px 22px;list-style:none;position:relative;min-height:56px;font-size:.98rem;line-height:1.4}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:2.5px solid var(--red);border-bottom:2.5px solid var(--red);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
-details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
-details .ans{padding:0 22px 20px;color:var(--ink-soft);font-size:.95rem}
-details .ans p:last-child{margin:0}
-
-/* ---------- cta final + rodapé ---------- */
-.final{background:radial-gradient(700px 300px at 50% -20%,rgba(216,0,8,.35),transparent 70%),linear-gradient(160deg,#0a3a78,#061a3a);text-align:center;color:#fff}
-.final h2{color:#fff}
-.final p{color:#c5d7ee;max-width:52ch;margin-left:auto;margin-right:auto}
-.final .btn{max-width:440px;margin:10px auto 0}
-.final .hrs{font-size:.85rem;color:#8fa9c9;margin-top:16px}
-footer.site{background:#040f24;color:#8ea6c6;font-size:.84rem;padding:40px 0 44px}
-footer.site .cols{display:grid;gap:24px}
-footer.site b{color:#fff}
-footer.site a{color:#c9daf0}
-footer.site p{margin:0 0 .5em}
-footer.site img{width:64px;height:64px;border-radius:50%;background:#fff;display:block;margin-bottom:14px}
-footer.site .legal{margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:.8rem;color:#7d95b6;display:flex;flex-direction:column;gap:10px}
-footer.site .legal p{margin:0}
-footer.site .legal-links{display:flex;flex-wrap:wrap;gap:8px 22px}
-footer.site .legal-links a{color:#c9daf0;text-decoration:underline;text-underline-offset:3px}
-footer.site .legal-links a:hover{color:#fff}
-
-/* ---------- barra fixa no celular ---------- */
-.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px var(--gut) calc(10px + env(safe-area-inset-bottom));box-shadow:0 -10px 28px rgba(6,26,58,.12)}
-.sticky .btn{width:100%}
+      --shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+    }
 
 
-/* ---------- direct response additions ---------- */
-.problem{background:#fff}
-.problem-grid{display:grid;gap:16px;margin-top:30px}
-.problem-card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px}
-.problem-card b{display:block;color:var(--navy);font-size:1.05rem;margin-bottom:7px}
-.problem-card p{color:var(--ink-soft);margin:0}
-.mechanism{background:var(--navy);color:#fff}
-.mechanism h2{color:#fff}
-.mechanism .lead{color:#b6cbe6}
-.mechanism-box{margin-top:32px;display:grid;gap:12px}
-.mechanism-step{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:16px;padding:20px}
-.mechanism-step strong{display:block;color:#fff;margin-bottom:4px}
-.mechanism-step span{display:block;color:#c5d7ee;font-size:.94rem}
-.offer{background:#fff}
-.offer-box{margin-top:30px;background:linear-gradient(135deg,#f4f6fa,#fff);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}
-.offer-box h3{font-size:1.35rem;margin-bottom:14px}
-.offer-list{list-style:none;padding:0;margin:0;display:grid;gap:11px}
-.offer-list li{display:flex;gap:11px;align-items:flex-start;color:var(--ink-soft)}
-.offer-list li::before{content:"✓";flex:none;color:#fff;background:var(--red);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.78rem;margin-top:1px}
-.authority{margin-top:30px;background:var(--tint);border:1px solid #c9dced;border-radius:20px;padding:24px}
-.authority strong{color:var(--navy)}
-@media(min-width:820px){
-  .problem-grid{grid-template-columns:repeat(3,1fr)}
-  .mechanism-box{grid-template-columns:repeat(3,1fr)}
-  .offer-box{padding:36px}
-}
+    /* =========================================================
+       2. RESET / BASE
+    ========================================================= */
 
-/* ---------- desktop ---------- */
-@media (min-width:820px){
-  body{font-size:17px;padding-bottom:0}
-  section{padding:96px 0}
-  .nav{display:flex;gap:26px}
-  .top .btn{display:inline-flex}
-  .hero{padding:84px 0 92px}
-  .hero-grid{grid-template-columns:1.2fr .8fr;align-items:center;gap:64px}
-  .hero-cta{flex-direction:row;align-items:center;gap:14px}
-  .strip ul{grid-template-columns:repeat(4,auto);justify-content:space-between}
-  .grid.c4{grid-template-columns:1fr 1fr}
-  .checks{grid-template-columns:1fr 1fr}
-  .steps{grid-template-columns:1fr 1fr}
-  .band{padding:56px}
-  .track{margin:0;padding:4px 0 20px}
-  .slide{flex-basis:calc((100% - 32px)/3);scroll-snap-align:start}
-  .ctrl{justify-content:flex-start}
-  .dots{display:none}
-  .vids{margin:32px 0 0;padding:4px 0 18px}
-  .vcard{flex:0 0 255px;scroll-snap-align:start}
-  .quotes{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-  .flow{grid-template-columns:repeat(3,1fr)}
-  .flow li{flex-direction:column}
-  .local{grid-template-columns:1fr 1fr}
-  footer.site .cols{grid-template-columns:1.2fr 1fr 1fr}
-  footer.site .legal{flex-direction:row;justify-content:space-between;align-items:center}
-  .sticky{display:none}
-}
-@media (min-width:1040px){.grid.c4{grid-template-columns:repeat(4,1fr)}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}.track{scroll-behavior:auto}}
-</style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-top: 0;
+      line-height: 1.15;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+
+    /* =========================================================
+       3. ESTRUTURA
+    ========================================================= */
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-title {
+      max-width: 750px;
+      margin-bottom: 45px;
+    }
+
+
+    /* =========================================================
+       4. TIPOGRAFIA / TAGS
+    ========================================================= */
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 20px;
+
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #8ebcff;
+    }
+
+    .tag-blue {
+      color: var(--blue);
+    }
+
+    .heading-light {
+      color: var(--white);
+    }
+
+
+    /* =========================================================
+       5. BOTÕES
+    ========================================================= */
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 16px 28px;
+
+      border-radius: 14px;
+
+      font-weight: 700;
+
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: var(--white);
+
+      box-shadow: 0 15px 35px rgba(216, 0, 8, 0.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      color: var(--white);
+    }
+
+    .btn-outline-dark {
+      border: 1px solid var(--white);
+      color: var(--white);
+    }
+
+
+    /* =========================================================
+       6. HEADER
+    ========================================================= */
+
+    header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      color: var(--white);
+      min-width: 0;
+      flex-shrink: 1;
+    }
+
+    .logo img {
+      width: 55px;
+      height: 55px;
+      flex: none;
+
+      border-radius: 50%;
+      background: var(--white);
+    }
+
+    .logo-text {
+      min-width: 0;
+      overflow: hidden;
+    }
+
+    .logo strong {
+      display: block;
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 12px;
+      color: #b5c7df;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+
+    /* =========================================================
+       7. HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 850px;
+
+      display: flex;
+      align-items: center;
+
+      position: relative;
+      overflow: hidden;
+
+      color: var(--white);
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(6, 26, 58, 0.96),
+          rgba(6, 26, 58, 0.6)
+        ),
+        url("assets/fotos/pratica-trator-denso.jpg");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      max-width: 720px;
+      padding-top: 110px;
+    }
+
+    .hero h1 {
+      margin-bottom: 25px;
+
+      color: var(--white);
+
+      font-size: 64px;
+      font-weight: 800;
+
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #ff4b52;
+    }
+
+    .hero p {
+      max-width: 650px;
+
+      color: #d7e5f7;
+      font-size: 21px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      margin-top: 35px;
+    }
+
+    .hero-authority {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      margin-top: 45px;
+    }
+
+    .authority-box {
+      padding: 15px 20px;
+
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+
+      border-radius: 15px;
+    }
+
+    .authority-box strong {
+      display: block;
+      font-size: 18px;
+    }
+
+    .authority-box small {
+      color: #bfd0e5;
+    }
+
+
+    /* =========================================================
+       8. AUTORIDADE
+    ========================================================= */
+
+    .authority-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+
+      margin-top: 45px;
+    }
+
+    .authority-card {
+      padding: 35px;
+
+      background: var(--white);
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+    }
+
+    .authority-card h3 {
+      color: var(--blue-dark);
+      font-size: 22px;
+    }
+
+    .authority-card p {
+      color: #52627a;
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       9. SERVIÇOS
+    ========================================================= */
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 70px;
+
+      align-items: center;
+    }
+
+    .service-grid.reverse {
+      direction: rtl;
+    }
+
+    .service-grid.reverse > * {
+      direction: ltr;
+    }
+
+    .image-box {
+      height: 500px;
+
+      overflow: hidden;
+
+      background: #ddd;
+
+      border-radius: 25px;
+    }
+
+    .image-box img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+
+
+    /* =========================================================
+       10. MÉTODO RANGEL
+    ========================================================= */
+
+    .method-section {
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    .method-intro {
+      max-width: 800px;
+    }
+
+    .method-intro p {
+      color: #c7d8ed;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+
+      margin-top: 50px;
+    }
+
+    .method-card {
+      padding: 35px;
+
+      background: rgba(255, 255, 255, 0.08);
+
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius);
+    }
+
+    .method-card span {
+      font-size: 42px;
+      font-weight: 800;
+      color: #ff4b52;
+    }
+
+    .method-card h3 {
+      color: var(--white);
+      font-size: 25px;
+    }
+
+    .method-card p {
+      color: #c7d8ed;
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       11. CURSO
+    ========================================================= */
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      gap: 30px;
+
+      margin-top: 50px;
+    }
+
+    .course-box {
+      padding: 40px;
+
+      background: var(--white);
+
+      border-radius: 25px;
+
+      box-shadow: var(--shadow);
+    }
+
+    .course-box h3 {
+      color: var(--blue-dark);
+      font-size: 26px;
+    }
+
+    .course-box ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .course-box li {
+      margin-bottom: 15px;
+      font-size: 17px;
+    }
+
+    .course-box.highlight {
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    .course-box.highlight h3 {
+      color: var(--white);
+    }
+
+    .course-box.highlight li {
+      color: #d8e5f5;
+    }
+
+    .course-box.highlight .btn {
+      margin-top: 25px;
+    }
+
+
+    /* =========================================================
+       12. EMPRESAS
+    ========================================================= */
+
+    .business-section {
+      background: var(--gray);
+    }
+
+    .business-banner {
+      padding: 60px;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--blue-dark)
+        );
+
+      color: var(--white);
+
+      border-radius: 30px;
+    }
+
+    .business-banner h2 {
+      max-width: 750px;
+      color: var(--white);
+    }
+
+    .business-banner p {
+      max-width: 700px;
+      color: #d8e5f5;
+    }
+
+
+    /* =========================================================
+       13. TURMAS — CARROSSEL
+    ========================================================= */
+
+    .training-section {
+      background: var(--blue-dark);
+      color: var(--white);
+    }
+
+    .training-section .section-title p {
+      color: #c7d8ed;
+    }
+
+    .carousel {
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+
+      padding: 4px 4px 10px;
+      margin: 0 -4px;
+
+      scrollbar-width: none;
+    }
+
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-ctrl {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+
+      margin-top: 18px;
+    }
+
+    .carousel-ctrl button {
+      width: 46px;
+      height: 46px;
+
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      background: transparent;
+      color: var(--white);
+
+      cursor: pointer;
+
+      display: grid;
+      place-items: center;
+
+      transition: background 0.15s, opacity 0.15s;
+    }
+
+    .carousel-ctrl button:hover:not(:disabled) {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .carousel-ctrl button:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+
+    .participation-section .carousel-ctrl button,
+    .business-section .carousel-ctrl button {
+      border-color: rgba(6, 26, 58, 0.25);
+      color: var(--blue-dark);
+    }
+
+    .participation-section .carousel-ctrl button:hover:not(:disabled),
+    .business-section .carousel-ctrl button:hover:not(:disabled) {
+      background: rgba(6, 26, 58, 0.08);
+    }
+
+    .gallery-item {
+      flex: 0 0 340px;
+      height: 280px;
+
+      overflow: hidden;
+
+      border-radius: 22px;
+
+      scroll-snap-align: start;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      transition: 0.4s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+
+    /* =========================================================
+       14. DEPOIMENTOS — CARROSSEL
+    ========================================================= */
+
+    .testimonial-video {
+      flex: 0 0 280px;
+
+      overflow: hidden;
+
+      background: var(--white);
+
+      border-radius: 22px;
+
+      box-shadow: var(--shadow);
+
+      scroll-snap-align: start;
+    }
+
+    .testimonial-video .vbox {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .testimonial-video .vbox iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .testimonial-info {
+      padding: 20px;
+    }
+
+    .testimonial-info strong {
+      display: block;
+
+      color: var(--blue-dark);
+      font-size: 20px;
+    }
+
+    .testimonial-info span {
+      color: #66758c;
+      font-size: 15px;
+    }
+
+    .quote-box {
+      max-width: 850px;
+
+      margin-top: 50px;
+      padding: 35px;
+
+      background: var(--gray);
+
+      border-left: 5px solid var(--red);
+      border-radius: 20px;
+    }
+
+    .quote-box p {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .quote-box strong {
+      color: var(--blue-dark);
+    }
+
+
+    /* =========================================================
+       15. COMO PARTICIPAR
+    ========================================================= */
+
+    .participation-section {
+      background: var(--gray);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+    }
+
+    .step {
+      padding: 35px;
+
+      background: var(--white);
+
+      border-radius: 22px;
+
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .step strong {
+      font-size: 40px;
+      color: var(--red);
+    }
+
+    .step h3 {
+      color: var(--blue-dark);
+    }
+
+    .step p {
+      color: #637289;
+      font-size: 16px;
+    }
+
+    .location-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+
+      margin-top: 50px;
+      padding: 40px;
+
+      background: var(--blue-dark);
+
+      color: var(--white);
+
+      border-radius: 25px;
+    }
+
+    .location-box h3 {
+      color: var(--white);
+    }
+
+    .location-box p {
+      color: #c9d9ed;
+    }
+
+
+    /* =========================================================
+       16. FAQ
+    ========================================================= */
+
+    .faq {
+      max-width: 850px;
+    }
+
+    details {
+      margin-bottom: 15px;
+      padding: 20px;
+
+      background: var(--white);
+
+      border: 1px solid var(--border);
+      border-radius: 15px;
+    }
+
+    summary {
+      color: var(--blue-dark);
+
+      font-weight: 700;
+
+      cursor: pointer;
+    }
+
+    details p {
+      margin-top: 15px;
+
+      color: #637289;
+      font-size: 16px;
+    }
+
+
+    /* =========================================================
+       17. CTA FINAL
+    ========================================================= */
+
+    .final-cta {
+      padding: 100px 0;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          var(--blue),
+          var(--blue-dark)
+        );
+
+      color: var(--white);
+    }
+
+    .final-cta h2 {
+      max-width: 800px;
+
+      margin: 0 auto;
+
+      color: var(--white);
+      font-size: 46px;
+    }
+
+    .final-cta p {
+      max-width: 650px;
+
+      margin: 25px auto;
+
+      color: #d7e5f7;
+    }
+
+
+    /* =========================================================
+       18. FOOTER
+    ========================================================= */
+
+    footer {
+      padding: 60px 0 30px;
+
+      background: #040F24;
+
+      color: #9db1cb;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 40px;
+    }
+
+    footer img {
+      background: var(--white);
+      border-radius: 50%;
+    }
+
+    footer h3,
+    footer h4 {
+      color: var(--white);
+    }
+
+    footer a {
+      color: #c9daf0;
+    }
+
+    footer a:hover {
+      color: var(--white);
+    }
+
+    .copyright {
+      margin-top: 50px;
+      padding-top: 25px;
+
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      text-align: center;
+
+      font-size: 14px;
+    }
+
+    .copyright p {
+      margin: 0 0 12px;
+      font-size: 14px;
+    }
+
+    .legal-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px 20px;
+    }
+
+    .legal-links a {
+      color: #c9daf0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .legal-links a:hover {
+      color: var(--white);
+    }
+
+
+    /* =========================================================
+       19. RESPONSIVIDADE
+    ========================================================= */
+
+    @media (max-width: 900px) {
+
+      nav {
+        display: none;
+      }
+
+      .header-content {
+        gap: 12px;
+      }
+
+      .header-content .btn {
+        padding: 12px 18px;
+        font-size: 14px;
+        flex: none;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 128px 0 60px;
+      }
+
+      .hero-content {
+        padding-top: 0;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .authority-grid,
+      .service-grid,
+      .method-grid,
+      .course-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-box {
+        height: 320px;
+      }
+
+      .service-grid.reverse {
+        direction: ltr;
+      }
+
+      .business-banner {
+        padding: 35px;
+      }
+
+      .location-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .final-cta h2 {
+        font-size: 34px;
+      }
+
+      .gallery-item {
+        flex-basis: 80%;
+        height: 260px;
+      }
+
+      .testimonial-video {
+        flex-basis: 78%;
+        max-width: 300px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .container {
+        padding: 0 18px;
+      }
+
+      .section {
+        padding: 70px 0;
+      }
+
+      .logo strong {
+        font-size: 15px;
+      }
+
+      .logo span {
+        font-size: 10px;
+      }
+
+      .logo img {
+        width: 42px;
+        height: 42px;
+      }
+
+      .header-content .btn {
+        padding: 10px 14px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 112px 0 50px;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .hero-authority {
+        flex-direction: column;
+      }
+
+      .authority-box {
+        width: 100%;
+      }
+
+      .business-banner {
+        padding: 30px 25px;
+      }
+
+      .course-box {
+        padding: 30px 25px;
+      }
+
+      .location-box {
+        padding: 30px 25px;
+      }
+
+      .gallery-item {
+        flex-basis: 84%;
+      }
+
+      .testimonial-video {
+        flex-basis: 82%;
+      }
+    }
+
+  </style>
 </head>
+
+
 <body>
 
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#topo" aria-label="Rangel Climatizadores, início">
-      <img src="assets/logo.png" width="52" height="52" alt="">
-      <span><b>Rangel Climatizadores</b><small>Distribuidor DENSO</small></span>
-    </a>
-    <nav class="nav" aria-label="Seções">
-      <a href="#problema">Por que o curso</a>
-      <a href="#programa">O que você aprende</a>
-      <a href="#depoimentos">Provas</a>
-      <a href="#local">Como participar</a>
-      <a href="#faq">Dúvidas</a>
-    </nav>
-    <a class="btn btn-sm" data-wa="topo" href="#">Quero saber da próxima turma</a>
-  </div>
-</header>
+  <!-- =======================================================
+       HEADER
+  ======================================================== -->
 
-<main id="topo">
+  <header>
 
-<!-- ================= HERO ================= -->
-<div class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="pill">Curso presencial · 2 dias · Tupanciretã (RS)</span>
-      <h1>Domine o Ar-Condicionado e Eleve Seu Nível Profissional.</h1>
-      <p class="lead">Um treinamento presencial para quem quer entender o sistema, identificar defeitos e executar o serviço com mais segurança — da máquina agrícola ao carro.</p>
-      <div class="hero-cta">
-        <a class="btn" data-wa="hero" href="#">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+    <div class="container header-content">
+
+      <a class="logo" href="#">
+
+        <img
+          src="assets/logo.png"
+          alt="Rangel Climatizadores"
+        >
+
+        <div class="logo-text">
+          <strong>Rangel Climatizadores</strong>
+          <span>Distribuidor DENSO</span>
+        </div>
+
+      </a>
+
+
+      <nav>
+
+        <a href="#agricola">Agrícola</a>
+        <a href="#curso">Curso</a>
+        <a href="#turmas">Turmas</a>
+        <a href="#depoimentos">Depoimentos</a>
+
+      </nav>
+
+
+      <a
+        class="btn btn-primary"
+        href="https://wa.me/5555996250528"
+      >
+        Falar com especialista
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="tag">
+            Climatização agrícola e automotiva
+          </div>
+
+
+          <h1>
+            Especialistas em
+            <span>climatização agrícola</span>
+            e automotiva
+          </h1>
+
+
+          <p>
+            Soluções profissionais em diagnóstico,
+            manutenção e formação técnica para quem
+            trabalha com máquinas agrícolas,
+            veículos e sistemas de ar-condicionado.
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5555996250528"
+            >
+              Solicitar atendimento
+            </a>
+
+            <a
+              class="btn btn-outline"
+              href="#curso"
+            >
+              Conhecer o treinamento
+            </a>
+
+          </div>
+
+
+          <div class="hero-authority">
+
+            <div class="authority-box">
+              <strong>DENSO</strong>
+              <small>Representante oficial</small>
+            </div>
+
+            <div class="authority-box">
+              <strong>Experiência prática</strong>
+              <small>Mercado agrícola real</small>
+            </div>
+
+            <div class="authority-box">
+              <strong>Turmas presenciais</strong>
+              <small>Aprendizado na prática</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         AUTORIDADE
+    ====================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag tag-blue">
+            Experiência e tecnologia
+          </div>
+
+          <h2>
+            Conhecimento técnico aplicado
+            no campo e na oficina
+          </h2>
+
+          <p>
+            A Rangel Climatizadores atua com soluções
+            em climatização agrícola e automotiva,
+            unindo experiência prática, equipamentos
+            profissionais e tecnologia DENSO.
+          </p>
+
+        </div>
+
+
+        <div class="authority-grid">
+
+          <div class="authority-card">
+
+            <h3>Distribuidor DENSO</h3>
+
+            <p>
+              Representante oficial DENSO na Região
+              Central do RS, trabalhando com componentes
+              e soluções reconhecidas mundialmente.
+            </p>
+
+          </div>
+
+
+          <div class="authority-card">
+
+            <h3>Experiência de mercado</h3>
+
+            <p>
+              Conhecimento construído na prática,
+              atendendo necessidades reais de máquinas
+              agrícolas, veículos e profissionais.
+            </p>
+
+          </div>
+
+
+          <div class="authority-card">
+
+            <h3>Formação profissional</h3>
+
+            <p>
+              Treinamentos presenciais para quem busca
+              dominar diagnóstico e manutenção de sistemas
+              de climatização.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CLIMATIZAÇÃO AGRÍCOLA
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="agricola"
+      style="background:#f4f6fa;"
+    >
+
+      <div class="container">
+
+        <div class="service-grid">
+
+          <div>
+
+            <div class="tag tag-blue">
+              Climatização agrícola
+            </div>
+
+            <h2>
+              Quando a máquina para,
+              a produtividade também para.
+            </h2>
+
+            <p>
+              Máquinas agrícolas trabalham em condições
+              extremas. Um sistema de climatização eficiente
+              garante conforto ao operador e ajuda a manter
+              a operação funcionando.
+            </p>
+
+            <p>
+              A Rangel conhece a realidade do campo e trabalha
+              com diagnóstico, manutenção e soluções para
+              diferentes equipamentos agrícolas.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5555996250528"
+            >
+              Falar sobre climatização agrícola
+            </a>
+
+          </div>
+
+
+          <div class="image-box">
+
+            <img
+              src="assets/fotos/turma-trator-capo-aberto.jpg"
+              alt="Climatização agrícola Rangel"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CLIMATIZAÇÃO AUTOMOTIVA
+    ====================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="service-grid reverse">
+
+          <div class="image-box">
+
+            <img
+              src="assets/fotos/pratica-caminhao-cabine.jpg"
+              alt="Ar condicionado automotivo e linha pesada"
+            >
+
+          </div>
+
+
+          <div>
+
+            <div class="tag tag-blue">
+              Climatização automotiva
+            </div>
+
+            <h2>
+              Diagnóstico correto evita troca
+              de peças sem necessidade.
+            </h2>
+
+            <p>
+              Além do segmento agrícola, a Rangel atua
+              com sistemas automotivos, auxiliando
+              profissionais e oficinas que precisam
+              resolver problemas com mais segurança.
+            </p>
+
+            <p>
+              O foco não é apenas trocar componentes,
+              mas entender o funcionamento do sistema
+              e encontrar a causa do problema.
+            </p>
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5555996250528"
+            >
+              Conhecer soluções automotivas
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         MÉTODO RANGEL
+    ====================================================== -->
+
+    <section class="section method-section">
+
+      <div class="container">
+
+        <div class="method-intro">
+
+          <div class="tag">
+            Método Rangel
+          </div>
+
+          <h2 class="heading-light">
+            Não é sobre trocar peças.
+            É sobre saber diagnosticar.
+          </h2>
+
+          <p>
+            Um bom profissional não trabalha no achismo.
+            Ele entende o funcionamento do sistema,
+            interpreta os sinais e encontra a causa
+            do problema.
+          </p>
+
+        </div>
+
+
+        <div class="method-grid">
+
+          <div class="method-card">
+
+            <span>01</span>
+
+            <h3>Entender</h3>
+
+            <p>
+              Conheça o funcionamento do sistema de
+              climatização, componentes e princípios básicos.
+            </p>
+
+          </div>
+
+
+          <div class="method-card">
+
+            <span>02</span>
+
+            <h3>Testar</h3>
+
+            <p>
+              Aprenda quais verificações realizar e como
+              interpretar os resultados encontrados.
+            </p>
+
+          </div>
+
+
+          <div class="method-card">
+
+            <span>03</span>
+
+            <h3>Diagnosticar</h3>
+
+            <p>
+              Desenvolva um raciocínio técnico para encontrar
+              defeitos com mais segurança e eficiência.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CURSO
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="curso"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag tag-blue">
+            Formação profissional
+          </div>
+
+          <h2>
+            Treinamento presencial para
+            quem quer evoluir na área.
+          </h2>
+
+          <p>
+            Dois dias de aprendizado prático para profissionais,
+            oficinas, empresas e pessoas que desejam entrar
+            no mercado de climatização agrícola e automotiva.
+          </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+          <div class="course-box">
+
+            <h3>Você vai aprender:</h3>
+
+            <ul>
+
+              <li>
+                ✔ Funcionamento dos sistemas de ar-condicionado
+              </li>
+
+              <li>
+                ✔ Diagnóstico de falhas
+              </li>
+
+              <li>
+                ✔ Linha agrícola e máquinas pesadas
+              </li>
+
+              <li>
+                ✔ Linha automotiva
+              </li>
+
+              <li>
+                ✔ Ferramentas e equipamentos
+              </li>
+
+              <li>
+                ✔ Aplicação de componentes DENSO
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="course-box highlight">
+
+            <h3>O treinamento inclui:</h3>
+
+            <ul>
+
+              <li>✔ Curso presencial</li>
+              <li>✔ Parte prática</li>
+              <li>✔ Certificado</li>
+              <li>✔ Turmas reduzidas</li>
+              <li>✔ Suporte após o treinamento</li>
+              <li>✔ Experiência da Rangel Climatizadores</li>
+
+            </ul>
+
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5555996250528"
+            >
+              Quero saber da próxima turma
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EMPRESAS
+    ====================================================== -->
+
+    <section class="section business-section">
+
+      <div class="container">
+
+        <div class="business-banner">
+
+          <h2>
+            Capacite sua equipe para resolver
+            problemas dentro da própria operação.
+          </h2>
+
+          <p>
+            Empresas, oficinas e frotas podem enviar
+            profissionais para desenvolver conhecimento
+            técnico aplicado.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5555996250528"
+          >
+            Treinar minha equipe
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TURMAS REALIZADAS (carrossel)
+    ====================================================== -->
+
+    <section
+      class="section training-section"
+      id="turmas"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag">
+            Experiência real
+          </div>
+
+          <h2 class="heading-light">
+            Treinamento com prática de verdade.
+          </h2>
+
+          <p>
+            Nada substitui colocar a mão no equipamento.
+            As turmas da Rangel unem conhecimento técnico,
+            diagnóstico e prática aplicada.
+          </p>
+
+        </div>
+
+
+        <div class="carousel">
+          <div class="carousel-track" id="gallery-track">
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/turma-trator-denso.jpg"
+                alt="Turma Rangel com máquina agrícola"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/pratica-trator-denso.jpg"
+                alt="Prática em trator"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/aula-teorica-detector-vazamento.jpg"
+                alt="Aula técnica Rangel"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/aula-carga-refrigerante.jpg"
+                alt="Carga de refrigerante"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/pratica-caminhao-cabine.jpg"
+                alt="Linha pesada"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/turma-caminhao-denso.jpg"
+                alt="Turma linha pesada"
+                loading="lazy"
+              >
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DEPOIMENTOS (carrossel)
+    ====================================================== -->
+
+    <section
+      class="section"
+      id="depoimentos"
+    >
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag tag-blue">
+            Quem fez, conta
+          </div>
+
+          <h2>
+            Profissionais que vieram aprender
+            na prática.
+          </h2>
+
+          <p>
+            A melhor prova do treinamento é ouvir quem participou,
+            colocou a mão no equipamento e levou esse conhecimento
+            para sua rotina profissional.
+          </p>
+
+        </div>
+
+
+        <div class="carousel">
+          <div class="carousel-track" id="testimonial-track">
+
+            <div class="testimonial-video">
+
+              <div class="vbox" data-ig="DdM8MLeRBQ6"></div>
+
+              <div class="testimonial-info">
+
+                <strong>Anderson</strong>
+
+                <span>
+                  Jóia - RS
+                  <br>
+                  Ar-condicionado agrícola
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="testimonial-video">
+
+              <div class="vbox" data-ig="Dc9sCZoRTJy"></div>
+
+              <div class="testimonial-info">
+
+                <strong>Daniel</strong>
+
+                <span>
+                  Treinamento avançado agrícola
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <div class="testimonial-video">
+
+              <div class="vbox" data-ig="DbMdID8R7QS"></div>
+
+              <div class="testimonial-info">
+
+                <strong>Érick</strong>
+
+                <span>
+                  Frederico Westphalen - RS
+                  <br>
+                  Agrícola e automotivo
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="quote-box">
+
+          <p>
+            "Foi uma experiência muito boa, com bastante aprendizado
+            e conhecimentos que vou poder aplicar no dia a dia profissional.
+            O conteúdo foi muito bem explicado, com uma ótima parte prática."
+          </p>
+
+          <strong>
+            Aluno do treinamento Rangel
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         COMO PARTICIPAR
+    ====================================================== -->
+
+    <section class="section participation-section">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag tag-blue">
+            Próxima turma
+          </div>
+
+          <h2>
+            Quer aprender com quem vive
+            a climatização na prática?
+          </h2>
+
+          <p>
+            Entre em contato com a Rangel e receba informações
+            sobre datas, investimento e disponibilidade de vagas.
+          </p>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+          <div class="step">
+
+            <strong>01</strong>
+
+            <h3>Converse conosco</h3>
+
+            <p>
+              Conte sua experiência e tire suas dúvidas
+              sobre o treinamento.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <strong>02</strong>
+
+            <h3>Reserve sua vaga</h3>
+
+            <p>
+              As turmas são pequenas para garantir
+              acompanhamento durante a prática.
+            </p>
+
+          </div>
+
+
+          <div class="step">
+
+            <strong>03</strong>
+
+            <h3>Participe do treinamento</h3>
+
+            <p>
+              Dois dias de aprendizado técnico
+              e aplicação prática.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="location-box">
+
+          <div>
+
+            <h3>Onde acontece</h3>
+
+            <p>
+              📍 Tupanciretã - RS
+              <br>
+              Treinamentos presenciais na estrutura
+              da Rangel Climatizadores.
+            </p>
+
+          </div>
+
+
+          <a
+            class="btn btn-outline-dark"
+            href="https://wa.me/5555996250528"
+          >
+            Falar no WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         FAQ
+    ====================================================== -->
+
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <div class="tag tag-blue">
+            Dúvidas
+          </div>
+
+          <h2>
+            Perguntas frequentes
+          </h2>
+
+        </div>
+
+
+        <div class="faq">
+
+          <details>
+
+            <summary>
+              O curso é somente automotivo?
+            </summary>
+
+            <p>
+              Não. A Rangel trabalha principalmente
+              com climatização agrícola, além da linha automotiva.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Preciso ter experiência?
+            </summary>
+
+            <p>
+              O treinamento atende profissionais que já atuam
+              na área e pessoas que desejam iniciar no segmento.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              O curso possui prática?
+            </summary>
+
+            <p>
+              Sim. O treinamento possui conteúdo técnico
+              e aplicação prática.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Recebo certificado?
+            </summary>
+
+            <p>
+              Sim. O participante recebe certificado
+              após o treinamento.
+            </p>
+
+          </details>
+
+
+          <details>
+
+            <summary>
+              Como saber a próxima turma?
+            </summary>
+
+            <p>
+              Entre em contato pelo WhatsApp para receber
+              datas e condições.
+            </p>
+
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CTA FINAL
+    ====================================================== -->
+
+    <section class="final-cta">
+
+      <div class="container">
+
+        <h2>
+          Prepare-se para dominar a climatização
+          agrícola e automotiva.
+        </h2>
+
+        <p>
+          Aprenda diagnóstico, pratique com equipamentos reais
+          e evolua profissionalmente com a experiência
+          da Rangel Climatizadores.
+        </p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5555996250528"
+        >
           Quero saber da próxima turma
         </a>
-        <a class="btn btn-ghost" href="#programa">Ver o que vou aprender</a>
+
       </div>
-      <p class="hero-note">Conversa direta pelo WhatsApp. Sem compromisso.</p>
-    </div>
 
-    <aside class="ticket" aria-label="Informações da próxima turma">
-      <span class="tag" id="tk-tag">Próxima turma</span>
-      <h2 id="tk-title">Em breve</h2>
-      <p class="sub" id="tk-sub">Entre na lista de reserva e receba as informações quando a nova turma abrir.</p>
-      <dl>
-        <div><dt>Onde</dt><dd>Tupanciretã, RS</dd></div>
-        <div><dt>Duração</dt><dd>2 dias</dd></div>
-        <div><dt>Vagas</dt><dd>Limitadas</dd></div>
-        <div><dt>Formato</dt><dd>Presencial e prático</dd></div>
-      </dl>
-      <a class="btn btn-block" data-wa="ticket" href="#">Entrar na lista da próxima turma</a>
-    </aside>
-  </div>
-</div>
+    </section>
 
-<div class="strip">
-  <div class="wrap">
-    <ul>
-      <li>Distribuidor DENSO</li>
-      <li>Representante oficial DENSO na Região Central do RS</li>
-      <li>Linha agrícola e leve</li>
-      <li>Alunos de várias cidades do RS</li>
-    </ul>
-  </div>
-</div>
+  </main>
 
-<!-- ================= PROBLEMA ================= -->
-<section class="problem" id="problema">
-  <div class="wrap">
-    <span class="eyebrow"><i>01</i> Por que aprender diagnóstico</span>
-    <h2>O problema não é só saber mexer no ar-condicionado.</h2>
-    <p class="lead">É saber descobrir o que está causando o problema antes de sair trocando componente ou recusando um serviço.</p>
 
-    <div class="problem-grid">
-      <article class="problem-card">
-        <b>“Não está gelando.”</b>
-        <p>O cliente chega com um defeito e você precisa saber por onde começar a investigação.</p>
-      </article>
-      <article class="problem-card">
-        <b>Trocar peça no chute custa caro.</b>
-        <p>Sem um caminho de diagnóstico, o serviço pode consumir tempo, peças e dinheiro sem resolver a causa.</p>
-      </article>
-      <article class="problem-card">
-        <b>Máquina parada também é prejuízo.</b>
-        <p>Em tratores, colheitadeiras e outras máquinas, climatização faz parte da rotina de trabalho e conforto do operador.</p>
-      </article>
-    </div>
-  </div>
-</section>
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
 
-<!-- ================= MECANISMO ================= -->
-<section class="mechanism" id="metodo">
-  <div class="wrap">
-    <span class="eyebrow"><i>02</i> Como o treinamento funciona</span>
-    <h2>Não é sobre decorar peças. É sobre aprender a raciocinar diante do defeito.</h2>
-    <p class="lead">Durante os dois dias, você acompanha um caminho de diagnóstico que ajuda a organizar o que testar, como interpretar e qual deve ser o próximo passo.</p>
+  <footer>
 
-    <div class="mechanism-box">
-      <div class="mechanism-step">
-        <strong>1. Entender</strong>
-        <span>Compreender o funcionamento do sistema e a função de cada componente.</span>
-      </div>
-      <div class="mechanism-step">
-        <strong>2. Testar</strong>
-        <span>Aprender onde procurar e quais verificações fazem sentido diante do sintoma.</span>
-      </div>
-      <div class="mechanism-step">
-        <strong>3. Diagnosticar</strong>
-        <span>Organizar as informações para chegar ao defeito com mais segurança e menos tentativa e erro.</span>
-      </div>
-    </div>
+    <div class="container footer-grid">
 
-    <div class="authority">
-      <strong>Experiência técnica + prática presencial.</strong>
-      O treinamento é realizado pela Rangel Climatizadores, distribuidora DENSO e representante oficial DENSO na Região Central do RS.
-    </div>
-  </div>
-</section>
-
-<!-- ================= PARA QUEM ================= -->
-<section id="para-quem">
-  <div class="wrap">
-    <span class="eyebrow"><i>03</i> Para quem é</span>
-    <h2>Escolha o seu caso</h2>
-    <p class="lead">O curso é para quem quer entrar na área, se aperfeiçoar ou aumentar a qualidade do serviço que já entrega.</p>
-
-    <div class="grid c4">
-      <article class="card">
-        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.4"/><path d="M12 3v6.6M12 14.4V21M3 12h6.6M14.4 12H21"/></svg></div>
-        <h3>Trabalho com máquina agrícola e linha pesada</h3>
-        <p>Trator, colheitadeira, pulverizador. Ar-condicionado quebrado na cabine, em plena safra, atrapalha o serviço. Aqui tem conteúdo agrícola de verdade.</p>
-        <a class="go" data-wa="agricola" href="#">Falar no WhatsApp →</a>
-      </article>
-      <article class="card">
-        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
-        <h3>Tenho oficina e quero atender ar-condicionado</h3>
-        <p>Você já mexe com carro e não quer mandar o cliente embora, nem entregar o serviço no palpite.</p>
-        <a class="go" data-wa="oficina" href="#">Falar no WhatsApp →</a>
-      </article>
-      <article class="card">
-        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16M9 21v-5h6v5M9 9h.01M15 9h.01M9 13h.01M15 13h.01"/></svg></div>
-        <h3>Sou dono de empresa, oficina ou frota</h3>
-        <p>Quer que o funcionário saiba resolver em casa. Em turmas recentes, donos de empresas pagaram o curso para a equipe.</p>
-        <a class="go" data-wa="empresa" href="#">Matricular um funcionário →</a>
-      </article>
-      <article class="card">
-        <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></div>
-        <h3>Estou começando na área</h3>
-        <p>Dá para começar. O mais importante é entender o que você vai aprender e chegar disposto a colocar a mão na prática.</p>
-        <a class="go" data-wa="iniciante" href="#">Tirar minha dúvida →</a>
-      </article>
-    </div>
-
-    <div class="honest">
-      <h3>O que você pode esperar dos 2 dias</h3>
-      <ul>
-        <li>Você não sai dos dois dias como um especialista — sai com uma base prática, um caminho de diagnóstico e clareza sobre por onde começar.</li>
-        <li>A evolução vem com a prática do dia a dia. Por isso, existe suporte depois do treinamento.</li>
-        <li>É um treinamento presencial e de turma pequena, para acompanhar de perto a parte prática.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= O QUE ACOMPANHA ================= -->
-<section class="white" id="curso">
-  <div class="wrap">
-    <span class="eyebrow"><i>04</i> O que você leva do treinamento</span>
-    <h2>Dois dias para aprender, praticar e sair pronto para aplicar</h2>
-    <ul class="checks">
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Conteúdo técnico e prático</b>Para o agrícola e para o automotivo.</span></li>
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Produtos DENSO</b>Você conhece o que está instalando.</span></li>
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Orientação para comprar as ferramentas certas</b>Sem gastar com o que não precisa.</span></li>
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Suporte depois do curso</b>Para a dúvida que aparece no primeiro serviço.</span></li>
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Certificado</b>Entregue após o curso.</span></li>
-      <li><span class="ck"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg></span><span><b>Turma de até 16 pessoas</b>Com gente de diferentes empresas.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ================= PROGRAMA ================= -->
-<section id="programa">
-  <div class="wrap">
-    <span class="eyebrow"><i>05</i> O que você vai aprender</span>
-    <h2>Do funcionamento ao diagnóstico — da máquina agrícola ao carro.</h2>
-    <p class="lead">Do funcionamento ao diagnóstico, da máquina agrícola ao carro.</p>
-    <ol class="steps">
-      <li><b>Como o sistema funciona</b><span>O ciclo do ar-condicionado e a função de cada componente.</span></li>
-      <li><b>Diagnóstico: por que não gela?</b><span>Um caminho de raciocínio para achar o defeito, em vez de trocar peça no chute.</span></li>
-      <li><b>Linha agrícola e pesada</b><span>Particularidades de tratores, colheitadeiras e outras máquinas.</span></li>
-      <li><b>Linha leve (automotivo)</b><span>Manutenção e reparo em carros de passeio e utilitários.</span></li>
-      <li><b>Ferramentas e equipamentos</b><span>O que comprar primeiro, o que dá para deixar para depois.</span></li>
-      <li><b>Produtos DENSO</b><span>Conhecer a linha e saber aplicar.</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ================= OFERTA ================= -->
-<section class="offer" id="oferta">
-  <div class="wrap">
-    <span class="eyebrow"><i>06</i> O treinamento</span>
-    <h2>O que está incluído nos 2 dias presenciais</h2>
-    <p class="lead">Tudo organizado para você aprender o conteúdo, acompanhar a prática e saber o que fazer depois do curso.</p>
-
-    <div class="offer-box">
-      <h3>Você recebe:</h3>
-      <ul class="offer-list">
-        <li><span>Conteúdo técnico e prático para linha agrícola e automotiva.</span></li>
-        <li><span>Parte prática em tratores.</span></li>
-        <li><span>Orientação para escolher e comprar as ferramentas certas.</span></li>
-        <li><span>Conhecimento e aplicação de produtos DENSO.</span></li>
-        <li><span>Certificado após o treinamento.</span></li>
-        <li><span>Suporte vitalício depois do curso para tirar dúvidas.</span></li>
-      </ul>
-      <a class="btn" data-wa="hero" href="#" style="margin-top:22px">Quero saber da próxima turma</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EMPRESAS ================= -->
-<section id="empresas" style="padding-top:0">
-  <div class="wrap">
-    <div class="band">
-      <div class="inner">
-        <span class="eyebrow">Para donos de empresa, oficina e frota</span>
-        <h2>Ar-condicionado quebrado em plena safra atrapalha a operação inteira.</h2>
-        <p>Capacitar quem já trabalha na sua operação é uma forma de resolver isso dentro de casa. Em turmas recentes, donos de empresa pagaram o curso para os seus funcionários.</p>
-        <p>Você pode matricular uma pessoa ou mais. Fale no WhatsApp e a gente combina.</p>
-        <a class="btn" data-wa="empresa" href="#">Matricular um funcionário</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= GALERIA (carrossel) ================= -->
-<section class="dark on-dark" id="galeria">
-  <div class="wrap">
-    <span class="eyebrow"><i>07</i> Como são as turmas</span>
-    <h2>Turma pequena, mão na massa</h2>
-    <p class="lead">Fotos das turmas da Rangel, em Tupanciretã. Toque numa foto para ampliar.</p>
-    <div class="car">
-      <div class="track" id="track" tabindex="0" aria-label="Fotos das turmas"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= DEPOIMENTOS ================= -->
-<section id="depoimentos">
-  <div class="wrap">
-    <span class="eyebrow"><i>08</i> Quem fez, conta</span>
-    <h2>Quem já fez o treinamento veio de várias cidades do RS</h2>
-    <p class="lead">A melhor prova é ver quem esteve na sala, na bancada e na parte prática.</p>
-
-    <div class="vids" id="vids" aria-label="Depoimentos em vídeo"></div>
-    <div class="quotes" id="quotes"></div>
-
-    <p style="margin-top:28px"><a class="btn btn-line" href="https://www.instagram.com/rangelclimatizadores/" target="_blank" rel="noopener">Ver mais no Instagram</a></p>
-  </div>
-</section>
-
-<!-- ================= COMO GARANTIR + LOCAL ================= -->
-<section class="white" id="local">
-  <div class="wrap">
-    <span class="eyebrow"><i>09</i> Sua vaga</span>
-    <h2>Quer participar da próxima turma?</h2>
-    <ol class="flow">
-      <li><span><b>Chame no WhatsApp</b><span>Conte o que você faz hoje e pergunte quando será a próxima turma.</span></span></li>
-      <li><span><b>Reserve a vaga</b><span>São até 16 alunos por turma. O valor e a forma de pagamento são informados pelo WhatsApp.</span></span></li>
-      <li><span><b>Faça o curso</b><span>São 2 dias presenciais, com certificado ao final.</span></span></li>
-    </ol>
-
-    <div class="local">
-      <div class="card">
-        <h3>Onde é o curso</h3>
-        <address>Rua Alcides Gomes, 257<br>Bairro Juliana, Tupanciretã, RS</address>
-        <a class="btn btn-line btn-sm" href="https://www.google.com/maps/search/?api=1&query=Rua+Alcides+Gomes+257+Juliana+Tupanciret%C3%A3+RS" target="_blank" rel="noopener">Ver no mapa</a>
-      </div>
-      <div class="card">
-        <h3>Loja e oficina</h3>
-        <address>Av. Serafim Bravo, 210<br>Tupanciretã, RS</address>
-        <p class="hrs">Atendimento: segunda a sexta, das 8h às 18h.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FAQ ================= -->
-<section id="faq">
-  <div class="wrap">
-    <span class="eyebrow"><i>10</i> Dúvidas comuns</span>
-    <h2>As dúvidas que normalmente aparecem antes da inscrição</h2>
-
-    <details>
-      <summary>Em 2 dias eu vou aprender tudo?</summary>
-      <div class="ans"><p>Não existe promessa de transformar alguém em especialista em dois dias. O objetivo é ensinar uma base prática, um caminho de diagnóstico e mostrar por onde começar. A prática do dia a dia desenvolve a experiência, e a Rangel oferece suporte depois do curso.</p></div>
-    </details>
-    <details>
-      <summary>Preciso ter experiência?</summary>
-      <div class="ans"><p>O curso atende quem quer entrar no mercado e quem já trabalha e quer se aperfeiçoar. Conte no WhatsApp qual é o seu caso e a gente diz com franqueza se a próxima turma serve para você.</p></div>
-    </details>
-    <details>
-      <summary>Serve para máquina agrícola?</summary>
-      <div class="ans"><p>Sim. O curso cobre o agrícola e o automotivo. Se você trabalha com um tipo específico de máquina, pergunte no WhatsApp.</p></div>
-    </details>
-    <details>
-      <summary>Tem certificado?</summary>
-      <div class="ans"><p>Sim. Você recebe o certificado após o curso.</p></div>
-    </details>
-    <details>
-      <summary>Vou saber quais ferramentas comprar?</summary>
-      <div class="ans"><p>Sim. A orientação para escolher e comprar as ferramentas certas faz parte do curso.</p></div>
-    </details>
-    <details>
-      <summary>Quanto custa e como pago?</summary>
-      <div class="ans"><p>O valor e a forma de pagamento são combinados no WhatsApp, junto com as informações da próxima turma.</p></div>
-    </details>
-    <details>
-      <summary>Moro em outra cidade. Como faço?</summary>
-      <div class="ans"><p>Nas últimas turmas vieram alunos de Frederico Westphalen, Júlio de Castilhos, Palmeira das Missões, Jóia, Quevedos e Santa Maria. Para combinar viagem e hospedagem, fale no WhatsApp.</p></div>
-    </details>
-    <details>
-      <summary>Onde é o curso?</summary>
-      <div class="ans"><p>Na Rua Alcides Gomes, 257, Bairro Juliana, em Tupanciretã (RS).</p></div>
-    </details>
-    <details>
-      <summary>Como garanto minha vaga?</summary>
-      <div class="ans"><p>Chame no WhatsApp. São vagas limitadas por turma. Se a turma estiver cheia, você entra na lista de reserva da próxima.</p></div>
-    </details>
-    <details>
-      <summary>Quando é a próxima turma?</summary>
-      <div class="ans"><p id="faq-turma">Em breve teremos o lançamento da nova turma. Entre na lista de reserva pelo WhatsApp e avisamos.</p></div>
-    </details>
-  </div>
-</section>
-
-<!-- ================= CTA FINAL ================= -->
-<section class="final">
-  <div class="wrap">
-    <h2>Quer saber quando será a próxima turma?</h2>
-    <p>Fale diretamente com a Rangel. Conte o que você faz hoje e receba as informações da próxima turma, incluindo data, investimento e forma de pagamento.</p>
-    <a class="btn btn-block" data-wa="final" href="#">Quero saber da próxima turma</a>
-    <p class="hrs">Atendimento de segunda a sexta, das 8h às 18h.</p>
-  </div>
-</section>
-
-</main>
-
-<footer class="site">
-  <div class="wrap">
-    <div class="cols">
       <div>
-        <img src="assets/logo.png" width="64" height="64" alt="Rangel Climatizadores">
-        <p><b>Rangel Climatizadores</b></p>
-        <p>CNPJ 10.695.707/0001-13</p>
+
+        <img
+          src="assets/logo.png"
+          width="70"
+          height="70"
+          alt="Rangel Climatizadores"
+        >
+
+        <h3>
+          Rangel Climatizadores
+        </h3>
+
+        <p>
+          Especialistas em climatização
+          agrícola e automotiva.
+        </p>
+
       </div>
+
+
       <div>
-        <p><b>Curso</b><br>Rua Alcides Gomes, 257<br>Bairro Juliana, Tupanciretã, RS</p>
-        <p><b>Loja e oficina</b><br>Av. Serafim Bravo, 210<br>Tupanciretã, RS</p>
+
+        <h4>Contato</h4>
+
+        <p>
+          Tupanciretã - RS
+        </p>
+
+        <p>
+          Instagram:
+          <br>
+          <a href="https://www.instagram.com/rangelclimatizadores/" target="_blank" rel="noopener">@rangelclimatizadores</a>
+        </p>
+
       </div>
+
+
       <div>
-        <p><b>Atendimento</b><br>Segunda a sexta, das 8h às 18h</p>
-        <p><a href="https://www.instagram.com/rangelclimatizadores/" target="_blank" rel="noopener">@rangelclimatizadores</a></p>
+
+        <h4>Tecnologia</h4>
+
+        <p>
+          Distribuidor DENSO
+        </p>
+
+        <p>
+          Treinamentos presenciais
+        </p>
+
       </div>
+
     </div>
-    <div class="legal">
-      <p>© <span id="ano">2026</span> Rangel Climatizadores. Todos os direitos reservados.</p>
+
+
+    <div class="container copyright">
+
+      <p>
+        © <span id="ano">2026</span> Rangel Climatizadores.
+        CNPJ 10.695.707/0001-13.
+        Todos os direitos reservados.
+      </p>
+
       <nav class="legal-links" aria-label="Documentos legais">
         <a href="politica-de-privacidade.html">Política de Privacidade</a>
         <a href="termos-de-uso.html">Termos de Uso</a>
       </nav>
+
     </div>
-  </div>
-</footer>
 
-<div class="lb hide" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada">
-  <button class="lb-x" type="button" aria-label="Fechar">×</button>
-  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
-  <button class="lb-nav lb-p" type="button" aria-label="Foto anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-  <button class="lb-nav lb-n" type="button" aria-label="Próxima foto"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-</div>
+  </footer>
 
-<div class="sticky">
-  <a class="btn" data-wa="sticky" href="#">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H10l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
-    Falar no WhatsApp
-  </a>
-</div>
+  <script>
+  (function () {
+    document.getElementById("ano").textContent = new Date().getFullYear();
 
-<script>
-/* ==================== CONFIG: edite só aqui ==================== */
-var CONFIG = {
-  // Número completo: 55 (Brasil) + 55 (DDD) + 996250528
-  whatsapp: "5555996250528",
+    /* -------- Carrossel genérico (setas + scroll nativo/touch) -------- */
+    function carousel(track) {
+      var wrap = document.createElement("div");
+      wrap.className = "carousel-ctrl";
+      var prev = document.createElement("button");
+      prev.type = "button";
+      prev.setAttribute("aria-label", "Anterior");
+      prev.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
+      var next = document.createElement("button");
+      next.type = "button";
+      next.setAttribute("aria-label", "Próximo");
+      next.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
+      wrap.appendChild(prev);
+      wrap.appendChild(next);
+      track.parentNode.insertBefore(wrap, track.nextSibling);
 
-  // Data da próxima turma, por extenso. Ex.: "16 e 17 de outubro, às 8h".
-  // Vazio = "Em breve" com lista de reserva.
-  proximaTurma: "",
-
-  // ID do pixel da Meta (só números). Vazio = sem pixel.
-  pixelId: "",
-
-  // FOTOS DO CARROSSEL. Arquivos em assets/fotos/. Para trocar ou acrescentar, é só editar a lista.
-  // Lista vazia = mostra espaços reservados.
-  fotos: [
-    {src:"assets/fotos/turma-trator-denso.jpg",        legenda:"Turma com trator e equipamento DENSO"},
-    {src:"assets/fotos/pratica-trator-denso.jpg",      legenda:"Prática no trator, com máquina de recarga DENSO"},
-    {src:"assets/fotos/aula-teorica-detector-vazamento.jpg", legenda:"Aula em sala, com peças e ferramentas na bancada"},
-    {src:"assets/fotos/aula-carga-refrigerante.jpg",   legenda:"Carga de fluido refrigerante com balança eletrônica"},
-    {src:"assets/fotos/pratica-caminhao-cabine.jpg",   legenda:"Linha pesada: prática no caminhão"},
-    {src:"assets/fotos/aula-pratica-compressor.jpg",   legenda:"Parte prática: aula com compressor na bancada"},
-    {src:"assets/fotos/turma-caminhao-denso.jpg",      legenda:"Linha pesada: caminhão e equipamento DENSO"},
-    {src:"assets/fotos/turma-trator-capo-aberto.jpg",  legenda:"Turma reunida em frente ao trator"}
-  ],
-
-  // VÍDEOS DE DEPOIMENTO. Duas formas por item:
-  //   {ig:"CODIGO_DO_REEL", nome:"", detalhe:""}       mostra o reel do Instagram na página
-  //   {src:"assets/videos/x.mp4", poster:"assets/videos/x.jpg", nome:"", detalhe:""}  vídeo próprio (melhor)
-  videos: [
-    {ig:"DdM8MLeRBQ6", nome:"Anderson", detalhe:"Jóia (RS) · Ar-condicionado agrícola"},
-    {ig:"Dc9sCZoRTJy", nome:"Daniel",   detalhe:"Treinamento avançado agrícola"},
-    {ig:"DbMdID8R7QS", nome:"Érick",    detalhe:"Frederico Westphalen (RS) · Agrícola e automotivo"},
-    {ig:"DbwjSmtxI67", nome:"Depoimento de aluno", detalhe:"Rangel + DENSO"}
-  ],
-
-  // DEPOIMENTOS EM TEXTO (autorizados pelos alunos). Pode incluir vários.
-  depoimentos: [
-    {texto:"Foi uma experiência muito boa, com bastante aprendizado e conhecimentos que vou poder aplicar no dia a dia profissional. O conteúdo foi muito bem explicado, com uma ótima parte prática.", autor:"Aluno do curso"}
-  ]
-};
-
-/* Mensagens pré-preenchidas por botão */
-var MSG = {
-  topo:     "Olá! Vi a página do curso de ar-condicionado e quero saber da próxima turma.",
-  hero:     "Olá! Vi a página do curso de ar-condicionado agrícola e automotivo e quero saber da próxima turma.",
-  ticket:   "Olá! Quero reservar minha vaga na próxima turma do curso de ar-condicionado.",
-  agricola: "Olá! Trabalho com máquina agrícola e quero saber do curso de ar-condicionado.",
-  oficina:  "Olá! Tenho oficina e quero saber do curso de ar-condicionado.",
-  empresa:  "Olá! Tenho empresa e quero saber como matricular um funcionário no curso.",
-  iniciante:"Olá! Estou começando na área e tenho dúvidas sobre o curso de ar-condicionado.",
-  final:    "Olá! Tenho uma dúvida sobre o curso de ar-condicionado.",
-  sticky:   "Olá! Vi a página do curso de ar-condicionado e quero saber da próxima turma."
-};
-
-(function(){
-  function el(tag, cls, html){ var e=document.createElement(tag); if(cls) e.className=cls; if(html!=null) e.innerHTML=html; return e; }
-  function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); }
-
-  var q = new URLSearchParams(location.search);
-  var origem = q.get("utm_source") || "";
-  var camp = q.get("utm_campaign") || "";
-  var sufixo = origem ? " (origem: " + origem + (camp ? " / " + camp : "") + ")" : "";
-
-  /* Pixel opcional */
-  if (CONFIG.pixelId) {
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', CONFIG.pixelId);
-    fbq('track', 'PageView');
-  }
-
-  /* Links do WhatsApp */
-  document.querySelectorAll("a[data-wa]").forEach(function(a){
-    var k = a.getAttribute("data-wa");
-    a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent((MSG[k] || MSG.final) + sufixo);
-    a.target = "_blank"; a.rel = "noopener";
-    a.addEventListener("click", function(){
-      if (window.fbq) { try { fbq("track", "Contact", {content_name: k}); } catch(e){} }
-    });
-  });
-
-  var ano=document.getElementById("ano"); if(ano) ano.textContent=new Date().getFullYear();
-
-  /* Próxima turma */
-  if (CONFIG.proximaTurma) {
-    document.getElementById("tk-title").textContent = CONFIG.proximaTurma;
-    document.getElementById("tk-sub").textContent = "Vagas limitadas";
-    document.getElementById("tk-tag").textContent = "Turma aberta";
-    document.getElementById("faq-turma").textContent = "A próxima turma é: " + CONFIG.proximaTurma + ". As vagas são limitadas, então chame no WhatsApp para garantir a sua.";
-  }
-
-  /* Setas + pontinhos: funcionam no celular e no computador */
-  var ARR_L='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>';
-  var ARR_R='<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>';
-  var updaters = [];
-  function carousel(track){
-    var ctrl = el("div","ctrl",'<button type="button" class="cb cb-prev" aria-label="Anterior">'+ARR_L+'</button><div class="dots"></div><button type="button" class="cb cb-next" aria-label="Próximo">'+ARR_R+'</button>');
-    track.parentNode.insertBefore(ctrl, track.nextSibling);
-    var prev = ctrl.querySelector(".cb-prev"), next = ctrl.querySelector(".cb-next"), dots = ctrl.querySelector(".dots");
-    function items(){ return Array.prototype.slice.call(track.children); }
-    function pos(i){ var it = items()[i]; return it.offsetLeft - (track.clientWidth - it.offsetWidth)/2; }
-    function go(i){ track.scrollTo({left: Math.max(0, pos(i)), behavior:"smooth"}); }
-    function step(){ var it = items()[0]; return it ? it.offsetWidth + 16 : 240; }
-    function cur(){
-      var c = track.scrollLeft + track.clientWidth/2, best = 0, bd = 1e9;
-      items().forEach(function(it,i){ var d = Math.abs(it.offsetLeft + it.offsetWidth/2 - c); if (d < bd) { bd = d; best = i; } });
-      return best;
+      function step() {
+        var it = track.children[0];
+        return it ? it.getBoundingClientRect().width + 20 : 300;
+      }
+      function update() {
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+      }
+      prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+      next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+      track.addEventListener("scroll", update, { passive: true });
+      window.addEventListener("resize", update);
+      update();
     }
-    function update(){
-      ctrl.classList.toggle("hide", !(track.scrollWidth > track.clientWidth + 4));
-      var i = cur();
-      Array.prototype.forEach.call(dots.children, function(d,k){ d.classList.toggle("on", k === i); });
-      prev.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-    }
-    items().forEach(function(it,i){
-      var d = el("button","dot"); d.type = "button"; d.setAttribute("aria-label","Ir para "+(i+1)+" de "+track.children.length);
-      d.addEventListener("click", function(){ go(i); }); dots.appendChild(d);
-    });
-    prev.addEventListener("click", function(){ track.scrollBy({left:-step(), behavior:"smooth"}); });
-    next.addEventListener("click", function(){ track.scrollBy({left: step(), behavior:"smooth"}); });
-    track.addEventListener("keydown", function(e){
-      if (e.key === "ArrowRight") track.scrollBy({left: step(), behavior:"smooth"});
-      if (e.key === "ArrowLeft")  track.scrollBy({left:-step(), behavior:"smooth"});
-    });
-    track.addEventListener("scroll", update, {passive:true});
-    updaters.push(update); update();
-  }
 
-  /* Carrossel de fotos (espaços reservados se CONFIG.fotos estiver vazio) */
-  var track = document.getElementById("track");
-  var fotos = (CONFIG.fotos && CONFIG.fotos.length) ? CONFIG.fotos : [
-    {legenda:"Turma de julho"}, {legenda:"Turma de setembro"}, {legenda:"Parte prática"}, {legenda:"Alunos e instrutores"}
-  ];
-  var lb = document.getElementById("lb"), lbImg = document.getElementById("lb-img"), lbCap = document.getElementById("lb-cap");
-  var lbList = [], lbI = 0, lbFrom = null;
-  function lbShow(i){
-    lbI = (i + lbList.length) % lbList.length;
-    var f = lbList[lbI];
-    lbImg.src = f.src; lbImg.alt = f.legenda || "Foto da turma"; lbCap.textContent = f.legenda || "";
-  }
-  function lbOpen(i, from){
-    lbFrom = from; lbShow(i); lb.classList.remove("hide"); document.body.style.overflow = "hidden";
-    lb.querySelector(".lb-x").focus();
-  }
-  function lbClose(){
-    lb.classList.add("hide"); document.body.style.overflow = ""; lbImg.removeAttribute("src");
-    if (lbFrom) lbFrom.focus();
-  }
-  lb.querySelector(".lb-x").addEventListener("click", lbClose);
-  lb.querySelector(".lb-p").addEventListener("click", function(){ lbShow(lbI - 1); });
-  lb.querySelector(".lb-n").addEventListener("click", function(){ lbShow(lbI + 1); });
-  lb.addEventListener("click", function(e){ if (e.target === lb || e.target.tagName === "FIGURE") lbClose(); });
-  document.addEventListener("keydown", function(e){
-    if (lb.classList.contains("hide")) return;
-    if (e.key === "Escape") lbClose();
-    if (e.key === "ArrowRight") lbShow(lbI + 1);
-    if (e.key === "ArrowLeft") lbShow(lbI - 1);
-  });
-  var tx = null;
-  lb.addEventListener("touchstart", function(e){ tx = e.touches[0].clientX; }, {passive:true});
-  lb.addEventListener("touchend", function(e){
-    if (tx === null) return;
-    var dx = e.changedTouches[0].clientX - tx; tx = null;
-    if (Math.abs(dx) > 50) lbShow(lbI + (dx < 0 ? 1 : -1));
-  });
+    var galleryTrack = document.getElementById("gallery-track");
+    if (galleryTrack) carousel(galleryTrack);
 
-  fotos.forEach(function(f){
-    var fig = el("figure","slide");
-    if (f.src) {
-      var idx = lbList.length; lbList.push(f);
-      fig.innerHTML = '<div class="pic"><img class="bgimg" loading="lazy" src="'+esc(f.src)+'" alt=""><img class="foto" loading="lazy" src="'+esc(f.src)+'" alt="'+esc(f.legenda||"Foto da turma")+'"></div>';
-      fig.setAttribute("role","button"); fig.tabIndex = 0;
-      fig.setAttribute("aria-label","Ampliar foto: "+(f.legenda||"turma"));
-      fig.addEventListener("click", function(){ lbOpen(idx, fig); });
-      fig.addEventListener("keydown", function(e){ if (e.key === "Enter" || e.key === " ") { e.preventDefault(); lbOpen(idx, fig); } });
-    } else {
-      fig.innerHTML = '<div class="pic"><img class="ph" src="assets/logo.png" alt=""><span class="ph-tag">Espaço para foto</span></div>';
-    }
-    if (f.legenda) fig.appendChild(el("figcaption",null,esc(f.legenda)));
-    track.appendChild(fig);
-  });
-  carousel(track);
+    var testimonialTrack = document.getElementById("testimonial-track");
+    if (testimonialTrack) carousel(testimonialTrack);
 
-  /* Vídeos de depoimento: o vídeo aparece direto na página */
-  var vids = document.getElementById("vids");
-  var igBoxes = [];
-  if (!CONFIG.videos || !CONFIG.videos.length) vids.classList.add("hide");
-  (CONFIG.videos || []).forEach(function(v){
-    var card = el("div","vcard"), box = el("div","vbox"), node;
-    if (v.src) {
-      node = el("video"); node.controls = true; node.playsInline = true; node.preload = "metadata";
-      if (v.poster) node.poster = v.poster;
-      node.src = v.src; box.classList.add("vfile");
-    } else {
-      node = el("iframe","vig");
-      node.src = "https://www.instagram.com/reel/"+encodeURIComponent(v.ig)+"/embed/";
-      node.loading = "lazy"; node.setAttribute("scrolling","no"); node.setAttribute("allowfullscreen","");
-      node.title = "Depoimento de "+(v.nome||"aluno");
+    /* -------- Embeds do Instagram nos depoimentos -------- */
+    var igBoxes = [];
+    document.querySelectorAll(".vbox[data-ig]").forEach(function (box) {
+      var code = box.getAttribute("data-ig");
+      var frame = document.createElement("iframe");
+      frame.className = "vig";
+      frame.src = "https://www.instagram.com/reel/" + encodeURIComponent(code) + "/embed/";
+      frame.loading = "lazy";
+      frame.setAttribute("scrolling", "no");
+      frame.setAttribute("allowfullscreen", "");
+      frame.title = "Depoimento em vídeo";
+      box.appendChild(frame);
       igBoxes.push(box);
-    }
-    box.appendChild(node); card.appendChild(box);
-    var cap = el("div","vcap",'<b>'+esc(v.nome||"Depoimento")+'</b><span>'+esc(v.detalhe||"")+'</span>');
-    if (v.ig) cap.innerHTML += '<a href="https://www.instagram.com/reel/'+encodeURIComponent(v.ig)+'/" target="_blank" rel="noopener">Abrir no Instagram</a>';
-    card.appendChild(cap); vids.appendChild(card);
-  });
-  /* o player do Instagram tem cabeçalho e rodapé fixos: corta a parte de curtidas e comentários */
-  function sizeIg(){
-    igBoxes.forEach(function(b){
-      var h = Math.round(b.clientWidth * 1.25 + 98);
-      b.style.height = h + "px"; b.firstChild.style.height = (h + 240) + "px";
     });
-  }
-  sizeIg();
-  carousel(vids);
-  window.addEventListener("resize", function(){ sizeIg(); updaters.forEach(function(u){ u(); }); });
-  window.addEventListener("load", function(){ sizeIg(); updaters.forEach(function(u){ u(); }); });
+    function sizeIg() {
+      igBoxes.forEach(function (b) {
+        var h = Math.round(b.clientWidth * 1.25 + 98);
+        b.style.height = h + "px";
+        var f = b.querySelector("iframe");
+        if (f) f.style.height = (h + 240) + "px";
+      });
+    }
+    sizeIg();
+    window.addEventListener("load", sizeIg);
+    window.addEventListener("resize", sizeIg);
+  })();
+  </script>
 
-  /* Depoimentos em texto */
-  var quotes = document.getElementById("quotes");
-  (CONFIG.depoimentos || []).forEach(function(d){
-    var bq = el("blockquote",null,'<p>“'+esc(d.texto)+'”</p><footer>'+esc(d.autor||"Aluno do curso")+'</footer>');
-    quotes.appendChild(bq);
-  });
-})();
-</script>
 </body>
 </html>
