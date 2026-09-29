@@ -969,7 +969,83 @@
 
 
     /* =========================================================
-       19. RESPONSIVIDADE
+       19. LIGHTBOX (fotos clicáveis)
+    ========================================================= */
+
+    .image-box img,
+    .gallery-item img {
+      cursor: zoom-in;
+    }
+
+    .lightbox {
+      display: none;
+
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px;
+
+      background: rgba(4, 15, 36, 0.92);
+
+      cursor: zoom-out;
+    }
+
+    .lightbox.is-open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+
+      border-radius: 12px;
+
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      width: 46px;
+      height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      border-radius: 50%;
+
+      color: var(--white);
+
+      cursor: pointer;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 600px) {
+
+      .lightbox {
+        padding: 16px;
+      }
+
+      .lightbox-close {
+        top: 12px;
+        right: 12px;
+      }
+    }
+
+
+    /* =========================================================
+       20. RESPONSIVIDADE
     ========================================================= */
 
     @media (max-width: 900px) {
@@ -1792,6 +1868,23 @@
 
             </div>
 
+
+            <div class="testimonial-video">
+
+              <div class="vbox" data-ig="DbwjSmtxI67"></div>
+
+              <div class="testimonial-info">
+
+                <strong>Depoimento de aluno</strong>
+
+                <span>
+                  Rangel + DENSO
+                </span>
+
+              </div>
+
+            </div>
+
           </div>
         </div>
 
@@ -2036,6 +2129,18 @@
 
   </footer>
 
+
+  <!-- =======================================================
+       LIGHTBOX (fotos clicáveis)
+  ======================================================== -->
+
+  <div class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Fechar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
   <script>
   (function () {
     document.getElementById("ano").textContent = new Date().getFullYear();
@@ -2102,6 +2207,38 @@
     sizeIg();
     window.addEventListener("load", sizeIg);
     window.addEventListener("resize", sizeIg);
+
+    /* -------- Lightbox (fotos clicáveis) -------- */
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightbox-img");
+    var lightboxClose = document.getElementById("lightbox-close");
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || "";
+      lightbox.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightboxImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".image-box img, .gallery-item img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        openLightbox(img.getAttribute("src"), img.getAttribute("alt"));
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
   })();
   </script>
 
