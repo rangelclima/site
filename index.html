@@ -25,7 +25,7 @@
   fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1101532125624926&ev=PageView&noscript=1"/></noscript>
+  src="https://www.facebook.com/tr?id=1101532125624926&amp;ev=PageView&amp;noscript=1"/></noscript>
   <!-- Fim Meta Pixel -->
 
   <!-- Google Fonts -->
@@ -33,7 +33,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet"
   >
 
@@ -535,6 +535,19 @@
       margin-top: 25px;
     }
 
+    /* Centraliza CTAs dentro dos blocos */
+    .course-box .btn-primary {
+      display: flex;
+      width: fit-content;
+      margin: 25px auto 0;
+    }
+
+    .participation-section > .container > .btn-primary {
+      display: flex;
+      width: fit-content;
+      margin: 25px auto 0;
+    }
+
 
     /* =========================================================
        12. EMPRESAS
@@ -956,7 +969,83 @@
 
 
     /* =========================================================
-       19. RESPONSIVIDADE
+       19. LIGHTBOX (fotos clicáveis)
+    ========================================================= */
+
+    .image-box img,
+    .gallery-item img {
+      cursor: zoom-in;
+    }
+
+    .lightbox {
+      display: none;
+
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px;
+
+      background: rgba(4, 15, 36, 0.92);
+
+      cursor: zoom-out;
+    }
+
+    .lightbox.is-open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 100%;
+
+      border-radius: 12px;
+
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      width: 46px;
+      height: 46px;
+
+      display: grid;
+      place-items: center;
+
+      background: rgba(255, 255, 255, 0.1);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      border-radius: 50%;
+
+      color: var(--white);
+
+      cursor: pointer;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    @media (max-width: 600px) {
+
+      .lightbox {
+        padding: 16px;
+      }
+
+      .lightbox-close {
+        top: 12px;
+        right: 12px;
+      }
+    }
+
+
+    /* =========================================================
+       20. RESPONSIVIDADE
     ========================================================= */
 
     @media (max-width: 900px) {
@@ -1179,10 +1268,10 @@
 
 
           <p>
-            Soluções profissionais em diagnóstico,
-            manutenção e formação técnica para quem
-            trabalha com máquinas agrícolas,
-            veículos e sistemas de ar-condicionado.
+            Aprenda na prática a diagnosticar, reparar e solucionar
+            problemas em sistemas de
+            ar-condicionado com a formação técnica da Rangel.
+
           </p>
 
 
@@ -1192,7 +1281,7 @@
               class="btn btn-primary"
               href="https://wa.me/5555996250528"
             >
-              Solicitar atendimento
+              Falar com o Rangel
             </a>
 
             <a
@@ -1246,15 +1335,11 @@
           </div>
 
           <h2>
-            Conhecimento técnico aplicado
-            no campo e na oficina
+           Formação técnica baseada em experiência real
           </h2>
 
           <p>
-            A Rangel Climatizadores atua com soluções
-            em climatização agrícola e automotiva,
-            unindo experiência prática, equipamentos
-            profissionais e tecnologia DENSO.
+            A Rangel transforma anos de experiência no campo e na oficina em cursos e treinamentos profissionais, combinando conhecimento prático, equipamentos profissionais e tecnologia DENSO para preparar você para diagnosticar e solucionar problemas com mais segurança e precisão.
           </p>
 
         </div>
@@ -1333,17 +1418,13 @@
             </h2>
 
             <p>
-              Máquinas agrícolas trabalham em condições
-              extremas. Um sistema de climatização eficiente
-              garante conforto ao operador e ajuda a manter
-              a operação funcionando.
+              Máquinas agrícolas trabalham em condições extremas. Um sistema de climatização eficiente garante conforto ao operador e ajuda a manter a operação funcionando.
             </p>
 
             <p>
-              A Rangel conhece a realidade do campo e trabalha
-              com diagnóstico, manutenção e soluções para
-              diferentes equipamentos agrícolas.
+             Na Rangel, você aprende técnicas de diagnóstico e manutenção aplicadas a diferentes equipamentos agrícolas, com conteúdo baseado em situações reais e experiência prática.
             </p>
+
 
           </div>
 
@@ -1396,17 +1477,14 @@
             </h2>
 
             <p>
-              Além do segmento agrícola, a Rangel atua
-              com sistemas automotivos, auxiliando
-              profissionais e oficinas que precisam
-              resolver problemas com mais segurança.
+              No diagnóstico automotivo, entender o funcionamento do sistema é tão importante quanto saber utilizar as ferramentas corretas. Identificar a causa real da falha permite trabalhar com mais segurança, precisão e eficiência.
             </p>
 
             <p>
-              O foco não é apenas trocar componentes,
-              mas entender o funcionamento do sistema
-              e encontrar a causa do problema.
+              Nos cursos da Rangel, você aprende na prática como analisar sistemas de climatização automotiva, identificar falhas e realizar diagnósticos mais assertivos, evitando a simples troca de componentes por tentativa e erro.
             </p>
+
+
 
           </div>
 
@@ -1536,15 +1614,7 @@
             <ul>
 
               <li>
-                ✔ Mercado de Trabalho: Como cobrar e iniciar na profissão
-              </li>
-
-              <li>
-                ✔ Ferramentas e EPIs
-              </li>
-
-              <li>
-                ✔ Noções do Ciclo de Refrigeração Agrícola
+                ✔ Noções do Ciclo de Refrigeração Automotivo
               </li>
 
               <li>
@@ -1568,7 +1638,7 @@
               </li>
 
               <li>
-                ✔ Manutenção e Teste de Componentes
+                ✔ Manutenção e teste de componentes
               </li>
 
               <li>
@@ -1592,7 +1662,7 @@
               </li>
 
               <li>
-                ✔ Higienização do Ar-Condicionado e Troca de Filtros
+                ✔ Higienização do Ar Condicionado e Troca de Filtros
               </li>
 
               <li>
@@ -1604,6 +1674,13 @@
               </li>
 
             </ul>
+
+            <a
+              class="btn btn-primary"
+              href="https://wa.me/5555996250528"
+            >
+              Quero aprender
+            </a>
 
           </div>
 
@@ -1691,6 +1768,14 @@
               <img
                 src="assets/fotos/turma-caminhao-denso.jpg"
                 alt="Turma linha pesada"
+                loading="lazy"
+              >
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="assets/fotos/turma-trator-capo-aberto.jpg"
+                alt="Turma Rangel com capô aberto de trator"
                 loading="lazy"
               >
             </div>
@@ -1791,6 +1876,23 @@
 
             </div>
 
+
+            <div class="testimonial-video">
+
+              <div class="vbox" data-ig="DbwjSmtxI67"></div>
+
+              <div class="testimonial-info">
+
+                <strong>Depoimento de aluno</strong>
+
+                <span>
+                  Rangel + DENSO
+                </span>
+
+              </div>
+
+            </div>
+
           </div>
         </div>
 
@@ -1825,34 +1927,14 @@
 
         </div>
 
-
-        <div class="location-box">
-
-          <div>
-
-            <h3>Onde acontece</h3>
-
-            <p>
-              📍 Tupanciretã - RS
-              <br>
-              Treinamentos presenciais na estrutura
-              da Rangel Climatizadores.
-            </p>
-
-          </div>
-
-
-          <a
-            class="btn btn-outline-dark"
-            href="https://wa.me/5555996250528"
-          >
-            Falar no WhatsApp
-          </a>
-
-        </div>
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5555996250528"
+        >
+          Ver disponibilidade de vagas
+        </a>
 
       </div>
-
     </section>
 
 
@@ -1879,19 +1961,6 @@
 
         <div class="faq">
 
-          <details>
-
-            <summary>
-              O curso é somente automotivo?
-            </summary>
-
-            <p>
-              Não. A Rangel trabalha principalmente
-              com climatização agrícola, além da linha automotiva.
-            </p>
-
-          </details>
-
 
           <details>
 
@@ -1915,7 +1984,7 @@
 
             <p>
               Sim. O treinamento possui conteúdo técnico
-              e aplicação prática.
+              e aplicação prática com máquinario de verdade.
             </p>
 
           </details>
@@ -1928,8 +1997,8 @@
             </summary>
 
             <p>
-              Sim. O participante recebe certificado
-              após o treinamento.
+              Sim. Após o treinamento o participante recebe certificado
+              reconhecido em todo território nacional.
             </p>
 
           </details>
@@ -2022,8 +2091,8 @@
         <h4>Contato</h4>
 
         <p>
-  Serafim Bravo, 210<br>Tupanciretã-RS
-</p>
+          Tupanciretã - RS
+        </p>
 
         <p>
           Instagram:
@@ -2067,6 +2136,18 @@
     </div>
 
   </footer>
+
+
+  <!-- =======================================================
+       LIGHTBOX (fotos clicáveis)
+  ======================================================== -->
+
+  <div class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Fechar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
 
   <script>
   (function () {
@@ -2134,6 +2215,38 @@
     sizeIg();
     window.addEventListener("load", sizeIg);
     window.addEventListener("resize", sizeIg);
+
+    /* -------- Lightbox (fotos clicáveis) -------- */
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightbox-img");
+    var lightboxClose = document.getElementById("lightbox-close");
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || "";
+      lightbox.classList.add("is-open");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("is-open");
+      lightboxImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".image-box img, .gallery-item img").forEach(function (img) {
+      img.addEventListener("click", function () {
+        openLightbox(img.getAttribute("src"), img.getAttribute("alt"));
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeLightbox();
+    });
   })();
   </script>
 
